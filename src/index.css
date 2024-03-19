@@ -293,8 +293,19 @@
     position: relative;
     align-items: center;
 }
-.ch1,.ch3,.ch4{
+.ch1,.ch3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ch4{
     margin: 0;
+}
+.pi{
+    font-size: 20px;
+    font-weight: bold;
+}
+.pi2,.pi3{
+    font-size: 15px;
 }
 .inp{
    position: relative;
@@ -304,10 +315,10 @@
 }
 .cards1{
     height: 200px;
-    width: 300px;
+    width: 260px;
     background-color: rgb(44, 17, 49);
     color: white;
-    /* padding: 2px; */
+    padding: 10px;
 }
 .img{
     height: 100px;
@@ -324,6 +335,7 @@
     flex-wrap: wrap;
     margin: 5px;
     justify-content: space-evenly;
+    /* padding: 3px; */
 }
 .loginw{
     display: flex;
@@ -390,6 +402,8 @@
 .cartitems{
     background-color:rgb(44, 17, 49);
     color: white;
+    width: 300px;
+    height: 200px;
 }
 .cartte{
     display: flex;
@@ -404,19 +418,26 @@
 .imagecart2{
     position: relative;
     /* left: 30px; */
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
+    float: right;
 }
 .remove{
     position: absolute;
+    
     /* left: 20px; */
 }
 .quantity{
   display: flex;
+  position: relative;
+  top:-15px;
+  left: 130px;
 }
 .inc,.dec{
     height: 20px;
     width: 20px;
+    margin: 0;
+    font-size: 15px;
 }
 .count{
   font-size: 15px;
@@ -431,7 +452,7 @@
 .dfle{
     margin:10px;
 }
-@media  screen and (max-width:426px){
+@media  screen and (min-width:0px) and (max-width:426px){
     .head{
         margin: 0;
         padding: 0;
@@ -467,7 +488,8 @@
     text-decoration: none;
     color: black;
     position: relative;
-    top: 3px;
+    top: -2px;
+    font-size: 7px;
    }
     .image{
         margin-left: 6px;
@@ -489,12 +511,13 @@
         left: 12px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 35px;
+        width: 40px;
         margin: 0;
         font-size: 5px;
+        padding: 0;
         text-align: left;
         height: 8px;
-        top: 2px;
+        top: -1px;
         color: black;
         border: 1px solid black;
     }
@@ -502,7 +525,7 @@
         font-weight: bold;
         background-color: rgb(207, 167, 22);
         position: relative;
-       top: 1px;
+       top: -2px;
        left: 20px;
        width: 20px;
        height: 10px;
@@ -742,8 +765,8 @@
         font-size: 7px;
     }
     .cards1{
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 130px;
         background-color: rgb(44, 17, 49);
         color: white;
         /* padding: 2px; */
@@ -759,16 +782,17 @@
         height: 30px;
         width: 30px;
         position: relative;
-        top: -50px;
+        /* top: -50px; */
         left: 60px;
     }
     .add{
         position: absolute;
-        width: 20px;
+        width: 30px;
         height: 20px;
-        font-size: 7px;
+        font-size: 5px;
         margin: 0;
         padding: 0;
+        
     }
     .cardsflex{
         display: flex;
@@ -927,6 +951,7 @@
     color: black;
     position: relative;
     top: 3px;
+    font-size: 8px;
    }
     .image{
         margin-left: 6px;
@@ -947,6 +972,7 @@
         background-color: rgb(207, 167, 22);
         width: 35px;
         margin: 0;
+        padding: 0;
         font-size: 5px;
         text-align: left;
         height: 8px;
@@ -960,10 +986,11 @@
         position: relative;
        top: 1px;
        left: 18px;
-       width: 20px;
+       width: 25px;
        height: 10px;
        font-size: 5px;
        padding: 0;
+       font-weight: bold;
     }
     .mainslide{
         width: 100%;
@@ -1196,8 +1223,8 @@
         font-size: 10px;
     }
     .cards1{
-        height: 150px;
-        width: 220px;
+        height: 200px;
+        width: 240px;
         background-color: rgb(44, 17, 49);
         color: white;
         /* padding: 2px; */
@@ -1382,7 +1409,7 @@
     text-decoration: none;
     color: black;
     position: relative;
-    top: 3px;
+    top: -3px;
    }
     .image{
         margin-left: 6px;
@@ -1394,19 +1421,20 @@
     }
     .about{
         position: relative;
-        left: 8px;
+        left: 15px;
     }
     .cart{
         position: relative;
-        left: 15px;
+        left: 30px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
         width: 55px;
         margin: 0;
+        padding: 0;
         font-size: 8px;
         text-align: left;
         height: 15px;
-        top: 4px;
+        top: 2px;
         color: black;
         border: 1px solid black;
     }
@@ -1415,11 +1443,13 @@
         background-color: rgb(207, 167, 22);
         position: relative;
        top: -2px;
-       left: 22px;
-       width: 30px;
+       padding: 1px;
+       left: 45px;
+       width: 40px;
        height: 15px;
        font-size: 8px;
        padding: 0;
+       font-weight: bold;
     }
     .mainslide{
         width: 100%;
@@ -1864,6 +1894,7 @@
         background-color: rgb(207, 167, 22);
         width: 75px;
         margin: 0;
+        padding: 0px;
         font-size: 12px;
         text-align: left;
         height: 20px;

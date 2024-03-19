@@ -132,18 +132,19 @@ const RestaurantMenu = ({ items }) => {
                     </div>
                     <div className="">
                       <div>
+                      <button
+                          className="add cursor-pointer"
+                          onClick={() => handleAddItem(item)}
+                        >
+                          +ADD
+                        </button>
                         <img
                           className="img "
                           src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
                           alt={`menu of ${item.id}`}
                         />
 
-                        <button
-                          className="add cursor-pointer"
-                          onClick={() => handleAddItem(item)}
-                        >
-                          +ADD
-                        </button>
+                        
                       </div>
                     </div>
                   </div>

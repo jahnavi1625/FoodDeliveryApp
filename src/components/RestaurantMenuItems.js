@@ -33,18 +33,19 @@ const RestaurantMenuItems = ({ items }) => {
                       <h3 className="category">{item.category}</h3>
                       <h4 className="price h-10">Price : Rs.{item.price}/-</h4>
                       <div className="flex">
+                      <button
+                          className=" remove"
+                          onClick={() => removeItems(item)}
+                        >
+                          Remove
+                        </button>
                         <img
                           className="imgcart2 "
                           src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
                           alt={`menu of ${item.id}`}
                         />
                         
-                        <button
-                          className=" remove absolute"
-                          onClick={() => removeItems(item)}
-                        >
-                          Remove
-                        </button>
+                        
                        
                         <div className="quantity">
                           <button className="inc" onClick={()=>incrementItem(item.id)}>+</button>
