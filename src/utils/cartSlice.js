@@ -14,8 +14,6 @@ const cartSlice = createSlice({
     addItem: (state, action) => {
       state.items.push(action.payload);
       localStorage.setItem('cart',JSON.stringify(state.items));
-      // localStorage.setItem('cart',state.items);
-      // return [...state,action.payload]
     },
     removeItem: (state, action) => {
   
@@ -31,27 +29,33 @@ const cartSlice = createSlice({
     },
     increment:(state,action)=>{
         //  state.counter+=1;
-        // console.log(action.payload);
+        console.log(action.payload);
         const itemId=action.payload;
         console.log(itemId);
         console.log(current(state.items.find(item=>console.log(item))));
-        
-        // const item=current(state.items.find(item=>console.log(item)));
+        const item=state.items.find(item=>item.id===itemId);
+        const itemData={...item};
+        console.log(itemData);
+    //     if(itemData){
+    //     //  state.items[itemData].counter+=1;
+    //     itemData.counter+=1;
+    //     }
+    if (typeof itemData.counter !== 'number') {
+      itemData.counter = 1; // Initialize counter if it's not a number
+  }
+  itemData.counter += 1;
+    },
+
+    decrement:(state,action)=>{
+        state.counter-=1;
+        // const itemId=action.payload;
+        // console.log(itemId);
+        // // console.log(state.items)
+        // const item=state.items.find(item=>item.id===itemId);
         // console.log(item);
         // if(item){
-        //   item.counter+=1;
+        //   item.counter-=1;
         // }
-    },
-    decrement:(state,action)=>{
-        // state.counter-=1;
-        const itemId=action.payload;
-        console.log(itemId);
-        // console.log(state.items)
-        const item=state.items.find(item=>item.id===itemId);
-        console.log(item);
-        if(item){
-          item.counter-=1;
-        }
     },
     login:(state,action)=>{
       state.isAuthenticated=true;
@@ -68,6 +72,10 @@ const cartSlice = createSlice({
   },
 });
 
-export const { addItem, removeItem, clearCart,increment,decrement,counter,login,logout } = cartSlice.actions;
+export const { items,addItem, removeItem, clearCart,increment,decrement,counter,login,logout } = cartSlice.actions;
+
+export const selectCount=store=>{
+  return store.cart.counter;
+}
 
 export default cartSlice.reducer;

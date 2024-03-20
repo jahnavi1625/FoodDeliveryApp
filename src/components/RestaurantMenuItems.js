@@ -1,34 +1,42 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "../utils/cartSlice";
+import { increment, decrement, selectCount } from "../utils/cartSlice";
 import { removeItem } from "../utils/cartSlice";
 import cart from "../utils/cartSlice";
 
-const RestaurantMenuItems = ({ items }) => {
-  // const [openIndex, setOpenIndex] = useState(null);
-  const counter = useSelector((state) => state.cart.counter);
+const RestaurantMenuItems = ({items}) => {
+  // const [count, setCount] = useState(1);
+  // const counter = useSelector((state) => state.cart.counter);
+  const counter = useSelector(selectCount);
+  
+  // const cart = useSelector(state => state.cart);
+
+  // // Now you can access properties of cart state
+  // const { items, counter } = cart;
 
  
 
-  // console.log(items);
-
+  console.log(counter);
+  // console.log(count);
   const dispatch = useDispatch();
 
   const removeItems = (item) => {
     dispatch(removeItem(item));
   };
   const incrementItem = (itemId) => {
+    // setCount(count+1);
     dispatch(increment(itemId));
     // console.log(itemId);
   };
   const decrementItem = (itemId) => {
     dispatch(decrement(itemId));
   };
+  console.log(items);
   return (
     // <div className="w-[1500px]">
       <div className="cartte  ">
         {items?.map((item, index) => (
-          <div className="cartitems m-4">
+          <div className="cartitems " key={item.id}>
                     <h1 className="categ ">{item.itemName}</h1>
                       <h3 className="category">{item.category}</h3>
                       <h4 className="price h-10">Price : Rs.{item.price}/-</h4>

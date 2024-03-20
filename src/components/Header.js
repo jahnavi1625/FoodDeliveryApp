@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import GetCurrentAddress from "../utils/GetCurrentAddress.js";
 import logos from "../assets/logos.png";
 import { FaShoppingCart } from "react-icons/fa";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
@@ -27,7 +28,7 @@ const Header = () => {
 
    const location=GetCurrentAddress();
   //  console.log(location);
-
+  const onlineStatus=useOnlineStatus();
   return (
     <div className="head   ">
     <div className="head2   ">
@@ -41,15 +42,20 @@ const Header = () => {
       <div className="loc ">
       
             {location}
-        
+            
       </div>
+      
+     
+      
       
       <div className="listmain">
       <ul className="list ">
-        
+       
         <li>
+        
           <Link to="/" className="link">
           <div className="home ">
+          online status:{onlineStatus?"✅": "🔴"}
           HOME
           </div>
           </Link>

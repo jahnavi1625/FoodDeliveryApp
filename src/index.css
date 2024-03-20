@@ -47,7 +47,7 @@
     position: relative;
     top: -100px;
     font-weight: bold;
-    left: 900px;
+    left: 800px;
     font-size: 20px ;
     list-style-type: none;
     color: black;
@@ -70,6 +70,10 @@
     color: black;
     font-size: 16px;
 }
+.home:hover,.about:hover,.cart:hover,.login:hover{
+    font-style: italic;
+    transform: translateY(-0.2ch);
+}
 .cart{
     position: relative;
     left: 120px;
@@ -84,7 +88,7 @@
      font-size: 15px;
     position: relative;
    top: -3px;
-   left: 180px;
+   left: 150px;
    width: 110px;
    font-weight: bold;
    background-color: rgb(205, 168, 20);
@@ -93,7 +97,7 @@
     width: 100%;
 }
 .imageslide{
-    height: 400px;
+    height: 500px;
     width: 100%;
     position: relative;
 }
@@ -233,13 +237,18 @@
     font-size: 25px;
     list-style-type: none;
 }
+.head1:hover,.l1:hover{
+    color: rgb(202, 144, 29);
+    transform: translateY(-0.2ch);
+    cursor: pointer;
+}
 .l1{
     font-size: 15px;
     list-style-type: none;
     font-style: italic;
 }
 .ul1,.ul2{
-    width:120px;
+    width:180px;
     font-style: italic;
 }
 
@@ -285,6 +294,14 @@
     width: 100px;
     position: relative;
     left: -70px;
+    margin-top: 20px;
+}
+.ul1{
+    position: relative;
+    left: -50px;
+    list-style-type: none;
+    text-align: center;
+    font-style: italic;
     margin-top: 20px;
 }
 .content{
@@ -404,6 +421,7 @@
     color: white;
     width: 300px;
     height: 200px;
+    margin: 20px;
 }
 .cartte{
     display: flex;
@@ -502,6 +520,11 @@
     .about{
         position: relative;
         left: 6px;
+    }
+    .head1:hover,.l1:hover{
+        color: rgb(202, 144, 29);
+        transform: translateY(-0.2ch);
+        cursor: pointer;
     }
     .link{
         text-decoration: none;
@@ -858,26 +881,36 @@
     .cartbutton{
         background-color: black;
         color: white;
-        width: 80px;
-        height: 30px;
+        width: 60px;
+        height: 20px;
+        font-size: 8px;
+        margin: 0;
+        padding: 0;
     }
     .cartitems{
         background-color:rgb(44, 17, 49);
         color: white;
         height: 100px;
-        width: 100px;
+        width: 130px;
+        margin: 4px;
     }
     .cartte{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        height: 300px;
         
+        height: 300px;
+        width: 200px;
+        position: relative;
+        left: 50px;
+    }
+    .cartCon{
+        font-size: 15px;
     }
     .imgcart2{
         position: relative;
         /* left: 30px; */
-        width: 30px;
+        width: 40px;
         height: 30px;
         float: right;
     }
@@ -888,16 +921,19 @@
         height: 12px;
         font-size: 6px;
         padding: 0;
-        align-self: self-end;
+        align-self: center;
     }
     .quantity{
       display: flex;
-      /* left: 10px; */
+      left:60px;
+      top: 20px;
     }
     .inc,.dec{
-        height: 13px;
+        height: 10px;
         width: 8px;
-        font-size: 7px;
+        font-size: 6px;
+        padding: 0;
+        margin: 0;
     }
     .count{
       font-size: 8px;
@@ -912,6 +948,7 @@
     .dfle{
         margin:10px;
     }
+    
 }
 @media  screen and (min-width:426px) and (max-width:769px){
     
@@ -1308,34 +1345,35 @@
         color: white;
         width: 60px;
         height: 30px;
+        font-size: 10px;
+        margin: 0;
         padding: 0;
-        position: relative;
-        left: -100px;
-        font-size: 6px;
-    }
-    .cartCon{
-        font-size: 14px;
-        position: relative;
-        left: -100px;
     }
     .cartitems{
         background-color:rgb(44, 17, 49);
         color: white;
         height: 100px;
         width: 130px;
+        margin: 4px;
     }
     .cartte{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        height: 300px;
         
+        height: 300px;
+        width: 500px;
+        position: relative;
+        left: 50px;
+    }
+    .cartCon{
+        font-size: 15px;
     }
     .imgcart2{
         position: relative;
         /* left: 30px; */
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
         float: right;
     }
     .remove{
@@ -1345,16 +1383,19 @@
         height: 12px;
         font-size: 6px;
         padding: 0;
-        align-self: self-end;
+        align-self: center;
     }
     .quantity{
       display: flex;
-      /* left: 10px; */
+      left:60px;
+      top: 20px;
     }
     .inc,.dec{
-        height: 13px;
+        height: 10px;
         width: 8px;
-        font-size: 7px;
+        font-size: 6px;
+        padding: 0;
+        margin: 0;
     }
     .count{
       font-size: 8px;
@@ -1765,58 +1806,68 @@
         position: relative;
         left: 20px;
     }
+    
+    .cartitems{
+        background-color:rgb(44, 17, 49);
+        color: white;
+        height: 120px;
+        width: 160px;
+        margin: 4px;
+    }
     .cartbutton{
         background-color: black;
         color: white;
         width: 60px;
+        position: relative;
+        left: 100px;
         height: 30px;
+        font-size: 8px;
+        margin: 0;
         padding: 0;
-        position: relative;
-        left: -10px;
-        font-size: 6px;
-    }
-    .cartCon{
-        font-size: 14px;
-        position: relative;
-        left: -10px;
-    }
-    .cartitems{
-        background-color:rgb(44, 17, 49);
-        color: white;
-        height: 130px;
-        width: 140px;
+        
     }
     .cartte{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        height: 300px;
         
+        height: 300px;
+        width: 700px;
+        position: relative;
+        left: 50px;
+    }
+    .cartCon{
+        font-size: 15px;
+        position: relative;
+        left: 100px;
     }
     .imgcart2{
         position: relative;
         /* left: 30px; */
         width: 50px;
-        height: 40px;
+        height: 50px;
         float: right;
     }
     .remove{
         position: absolute;
         /* left: 20px; */
-        width: 30px;
-        height: 12px;
-        font-size: 6px;
+        width: 40px;
+        height: 15px;
+        font-size: 7px;
         padding: 0;
-        align-self: self-end;
+        align-self:start ;
     }
     .quantity{
       display: flex;
-      /* left: 10px; */
+      left:70px;
+      top: 20px;
     }
     .inc,.dec{
-        height: 13px;
-        width: 8px;
-        font-size: 7px;
+        height: 15px;
+        width: 10px;
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
     }
     .count{
       font-size: 10px;
@@ -1873,7 +1924,7 @@
     text-decoration: none;
     color: black;
     position: relative;
-    top: -5px;
+    top: -20px;
    }
     .image{
         margin-left: 6px;
@@ -1898,7 +1949,7 @@
         font-size: 12px;
         text-align: left;
         height: 20px;
-        top: -3px;
+        top: -18px;
         color: black;
         border: 1px solid black;
     }
@@ -1906,7 +1957,7 @@
         font-weight: bold;
         background-color: rgb(207, 167, 22);
         position: relative;
-       top: -4px;
+       top: -18px;
        left: 32px;
        width: 40px;
        height: 22px;
@@ -2211,54 +2262,62 @@
         color: white;
         width: 60px;
         height: 30px;
-        padding: 0;
-        position: relative;
-        left: -100px;
-        font-size: 6px;
-    }
-    .cartCon{
-        font-size: 14px;
-        position: relative;
-        left: -100px;
+        font-size: 8px;
+        margin: 0;
+        /* padding: 0; */
     }
     .cartitems{
         background-color:rgb(44, 17, 49);
         color: white;
-        height: 120px;
-        width: 130px;
-        
+        height: 150px;
+        width: 160px;
+        margin: 4px;
+        padding: 3px;
+        margin: 10px;
     }
     .cartte{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        height: 300px;
         
+        height: 300px;
+        width: 700px;
+        position: relative;
+        left: 50px;
+    }
+    .cartCon{
+        font-size: 20px;
+        text-align: left;
+        position: relative;
+        left: 20px;
     }
     .imgcart2{
         position: relative;
         /* left: 30px; */
-        width: 60px;
+        width: 50px;
         height: 50px;
         float: right;
     }
     .remove{
         position: absolute;
         /* left: 20px; */
-        width: 30px;
-        height: 12px;
-        font-size: 6px;
+        width: 40px;
+        height: 15px;
+        font-size: 7px;
         padding: 0;
-        align-self: self-end;
+        align-self:start ;
     }
     .quantity{
       display: flex;
-      /* left: 10px; */
+      left:70px;
+      top: 20px;
     }
     .inc,.dec{
-        height: 13px;
-        width: 8px;
-        font-size: 7px;
+        height: 20px;
+        width: 15px;
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
     }
     .count{
       font-size: 8px;
