@@ -4,9 +4,12 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
 import { UserContext } from "../App";
 
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+
 const RestaurantMenu = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [expanded,setExpanded]=useState(true);
+  const [expanded, setExpanded] = useState(true);
 
   // const toggleItem = (index) => {
   //   // setOpenIndex((prev) => (prev === index ? null : index));
@@ -20,12 +23,9 @@ const RestaurantMenu = ({ items }) => {
   const [click, setClick] = useState(false);
   const navigate = useNavigate();
   const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
-  const param=useParams();
-  const {id}=param;
-  
+  const param = useParams();
+  const { id } = param;
 
-  
-   
   useEffect(() => {
     fetchData();
     fetchMain();
@@ -52,12 +52,11 @@ const RestaurantMenu = ({ items }) => {
 
   const handleAddItem = (item) => {
     if (isLoggedIn) {
-      alert(`added to cart`);
+      toast(`${item.itemName} is added to cart`)
       dispatch(addItem(item));
-      
     } else {
-      navigate("/login",{
-        state:{id}
+      navigate("/login", {
+        state: { id },
       });
     }
   };
@@ -78,119 +77,115 @@ const RestaurantMenu = ({ items }) => {
     filterItems();
   };
   console.log(filterRestaurant);
+  // const notify = () => toast("Item is added to cart");
+
   return (
     <div className="restro">
-      <div>
+      <div className="main">
         {showItem?.map(({ id, Name, Locality, Cuisines }) => (
-          <div key={id} className="content   " >
+          <div key={id} className="content   ">
             <h1 className="ch1 ">{Name}</h1>
             <h3 className="ch3 ">{Locality}</h3>
             <h4 className="ch4 ">{Cuisines.join(" , ")}</h4>
           </div>
         ))}
-      
-        
-          <div className="inp m-4 p-4 flex ">
-            <input
-              type="text"
-              className="input"
-              placeholder="entre to search..."
-              value={searchText}
-              onChange={(e) => {
-                setSearchText(e.target.value);
-              }}
-            />
-            <button
-              className="inputbut "
-              onClick={handleClick}
-            >
-              Search
-            </button>
-          </div>
-        
+
+        <div className="inp m-4 p-4 flex ">
+          <input
+            type="text"
+            className="input"
+            placeholder="entre to search..."
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+          />
+          <button className="inputbut " onClick={handleClick}>
+            Search
+          </button>
+        </div>
+
         <div className="cardsflex   ">
-        {!click
-          ? resInfo?.map((item, index) => (
-
-            <div className=" p-2  ">
-
-              <div className="cards1 ">
-                <div
-                  className=""
-                  // onClick={()=> toggleItem(index)}
-                  key={item.id}
-                >
-                  <p className="pi ">{item.itemName}</p>
-                  
-                </div>
-
-                {expanded &&  (
-                  <div className="">
-                    <div>
-                      <p className="pi2">{item.category}</p>
-                      <p className="pi3">Price : Rs.{item.price}/-</p>
+          {!click
+            ? resInfo?.map((item, index) => (
+                <div className=" p-2  ">
+                  <div className="cards1 ">
+                    <div
+                      className=""
+                      // onClick={()=> toggleItem(index)}
+                      key={item.id}
+                    >
+                      <p className="pi ">{item.itemName}</p>
                     </div>
+
+                    {expanded && (
+                      <div className="">
+                        <div>
+                          <p className="pi2">{item.category}</p>
+                          <p className="pi3">Price : Rs.{item.price}/-</p>
+                        </div>
+                        <div className="butimg">
+                          <div>
+                            
+                            <img
+                              className="img "
+                              src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
+                              alt={`menu of ${item.id}`}
+                            />
+                            <button
+                              className="add cursor-pointer"
+                              onClick={() => handleAddItem(item)}
+                            >
+                              +ADD
+                            </button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))
+            : filterRestaurant?.map((item, index) => (
+                <div className=" cards1 ">
+                  <div
+                    className=""
+                    // onClick={() => toggleItem(index)}
+                    key={item.id}
+                  >
+                    <p className="pi2">{item.itemName}</p>
+                  </div>
+
+                  {expanded && (
                     <div className="">
                       <div>
-                      <button
-                          className="add cursor-pointer"
-                          onClick={() => handleAddItem(item)}
-                        >
-                          +ADD
-                        </button>
-                        <img
-                          className="img "
-                          src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
-                          alt={`menu of ${item.id}`}
-                        />
+                        <p className="pi2">{item.category}</p>
+                        <p className="pi3">Price : Rs.{item.price}/-</p>
+                      </div>
+                      <div className="">
+                        <div>
+                          <img
+                            className="img"
+                            src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
+                            alt={`menu of ${item.id}`}
+                          />
 
-                        
+                          <button
+                            className="add  "
+                            onClick={() => handleAddItem(item)}
+                          >
+                            +ADD
+                          </button>
+                          {/* <button onClick={notify}>Notify!</button> */}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  )}
                 </div>
-              </div>
-            ))
-          : filterRestaurant?.map((item, index) => (
-              <div className="  ">
-                <div
-                  className=""
-                  // onClick={() => toggleItem(index)}
-                  key={item.id}
-                >
-                  <h1 className="">{item.itemName}</h1>
-                  <p>⬇</p>
-                </div>
-
-                {openIndex === index && (
-                  <div className="">
-                    <div>
-                      <h3 className="">{item.category}</h3>
-                      <h4 className="">Price : Rs.{item.price}/-</h4>
-                    </div>
-                    <div className="">
-                      <div>
-                        <img
-                          className="img"
-                          src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
-                          alt={`menu of ${item.id}`}
-                        />
-
-                        <button
-                          className=" absolute  "
-                          onClick={() => handleAddItem(item)}
-                        >
-                          +ADD
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-            </div>
+              ))}
+        </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

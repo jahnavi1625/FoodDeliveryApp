@@ -25,6 +25,7 @@ const Login = () => {
       console.log(isLoggedIn);
       dispatch(login());
       navigate(`/`);
+     
       // if(id===1){
         
       //   navigate(`/restaurant/1`);
@@ -59,10 +60,15 @@ const Login = () => {
     }
   
   };
+
+  const defaultFunction=()=>{
+    setIsLoggedIn(true);
+    navigate("/");
+  }
   return (
     <>
       <div className=" loginw ">
-        <div className=" ">
+        <div className="form ">
           <form onSubmit={handleSubmit} className="logins">
             <div
               className="inp1 "
@@ -108,6 +114,8 @@ const Login = () => {
             <p className="pass">
               Default Password:<b>foodapp</b> 
             </p>
+
+            <p className="guest" onClick={defaultFunction}>Continue as guest</p>
           </form>
         </div>
       </div>

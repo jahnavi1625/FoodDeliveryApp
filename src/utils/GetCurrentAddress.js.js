@@ -51,7 +51,7 @@ function GetCurrentAddress() {
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
-          console.log(data.address);
+          // console.log(data.address);
           setAdd(data.address);
         });
     });
@@ -59,7 +59,7 @@ function GetCurrentAddress() {
   return (
     <>
       <p className="font-bold text-yellow-400 h-11 p-2 my-2 w-[2000px] text-capital ml-[50px]">
-        Location : {add.state}, {add.state_district}, {add.town}, {add.country}  , {add.neighbourhood}
+        {add.state}, {add.state_district}, {add.town}, {add.country}  , {add.neighbourhood}
       </p>
     </>
   );

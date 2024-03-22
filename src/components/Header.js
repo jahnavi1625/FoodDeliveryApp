@@ -42,7 +42,7 @@ const Header = () => {
       <div className="loc ">
       
             {location}
-            
+            {/* online status:{onlineStatus?"✅": "🔴"} */}
       </div>
       
      
@@ -55,7 +55,7 @@ const Header = () => {
         
           <Link to="/" className="link">
           <div className="home ">
-          online status:{onlineStatus?"✅": "🔴"}
+          
           HOME
           </div>
           </Link>
@@ -70,7 +70,7 @@ const Header = () => {
         
         <li>
           <Link to="/cart" className="link">
-            <p className="cart ">CART- <FaShoppingCart/>-({cartItems.length}) </p>
+            <p className="cart ">CART <FaShoppingCart/> {cartItems.length}</p>
           </Link>
           {/* <h3 className="m-2 w-32 text-white font-bold">Cart</h3> */}
         </li>
