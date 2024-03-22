@@ -15,6 +15,7 @@ import AboutUs from "./components/AboutUs";
 import Slider2 from "./components/Slider2";
 import Footer from "./components/Footer";
 import RestaurantMenuItems from "./components/RestaurantMenuItems";
+import Payment from "./components/Payment";
 export const UserContext = createContext(null);
 
 const App = () => {
@@ -49,7 +50,7 @@ const App = () => {
             <Route path="/restaurant2/:id" element={<RestaurantMenu2 />} />
             <Route path="/restaurant3/:id" element={<RestaurantMenu3 />} />
             <Route path="/cart" element={<Cart />} />
-            
+            <Route path="/payment" element={<Payment />} />
           </Routes>
            
         </BrowserRouter>

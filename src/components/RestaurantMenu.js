@@ -11,7 +11,7 @@ import Footer from "./Footer";
 const RestaurantMenu = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const [expanded, setExpanded] = useState(true);
-
+  const [itemFound,setitemFound]=useState(true);
   // const toggleItem = (index) => {
   //   // setOpenIndex((prev) => (prev === index ? null : index));
   //   setExpanded((prev)=>(prev===index) ? null:index);
@@ -79,7 +79,7 @@ const RestaurantMenu = ({ items }) => {
   };
   console.log(filterRestaurant);
   // const notify = () => toast("Item is added to cart");
-
+  
   return (
     <div className="restro">
       <div className="main">
@@ -147,7 +147,9 @@ const RestaurantMenu = ({ items }) => {
                   </div>
                 </div>
               ))
-            : filterRestaurant?.map((item, index) => (
+            :
+          
+            filterRestaurant?.map((item, index) => (
                 <div className=" cards2 ">
                   <div
                     className=""
@@ -183,8 +185,15 @@ const RestaurantMenu = ({ items }) => {
                     </div>
                   )}
                 </div>
-              ))}
+              ))
+            
+            }
         </div>
+        <div>{
+          filterRestaurant.length===0 && (
+            <p className="notfound">Item not found</p>
+          )
+          }</div>
       </div>
       <ToastContainer/>
       <Footer/>

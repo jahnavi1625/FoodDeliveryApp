@@ -1,21 +1,27 @@
+
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement } from "../utils/cartSlice";
 import { removeItem } from "../utils/cartSlice";
-import cart from "../utils/cartSlice";
-import { Link } from "react-router-dom";
-import Footer from "./Footer";
-import Payment from "./Payment";
-import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
-const RestaurantMenuItems = ({ items }) => {
-  // const [count, setCount] = useState(1);
-  const counter = useSelector((state) => state.cart.counter);
+const Payment = ({checkitems}) => {
+   
+
+    const totoalPrice=()=>{
+    let sum=0;
+    checkitems.forEach(item=>{
+        sum+=item.price*item.counter;
+    })
+    return sum;
+};
+
+    const counter = useSelector((state) => state.cart.counter);
   // const cart = useSelector(state => state.cart);
 
   // // Now you can access properties of cart state
   // const { items, counter } = cart;
-  const navigate=useNavigate();
+
   console.log(counter);
   // console.log(count);
   const dispatch = useDispatch();
@@ -31,16 +37,15 @@ const RestaurantMenuItems = ({ items }) => {
   const decrementItem = (itemId) => {
     dispatch(decrement(itemId));
   };
- const checkFunc=()=>{
-  navigate("/payment")
- }
+  const notify=()=>{
+    toast(`payment of ${totoalPrice()} succesfull`);
+  }
 
-
-  console.log(items);
+  console.log(checkitems);
+  
   return (
-    <>
     <div className="cartte1  ">
-      {items?.map((item, index) => (
+      {checkitems?.map((item, index) => (
         <div className="cartitems1 " key={item.id}>
           <div className="itemenu">
           <h1 className="categ1 ">{item.itemName}</h1>
@@ -73,15 +78,19 @@ const RestaurantMenuItems = ({ items }) => {
           
         </div>
       ))}
-      <button className="check" onClick={()=>{checkFunc(items)}} >Checkout</button>
-      <Payment checkitems={items}/>
+      <div className="w-1000px border border-solid-black d-flex justify-between ">
+        <div>
+        Total:
+        </div>
+        
+        <div text-end>
+        ${totoalPrice()}
+        </div>
+        </div>
+      <button className="bg-primary" onClick={notify} >ProceedToPay</button>
+      <ToastContainer/>
     </div>
-    {/* <div className="foot">
-    <Footer/>
-    </div> */}
-    
-     </>
-  );
-};
+  )
+}
 
-export default RestaurantMenuItems;
+export default Payment

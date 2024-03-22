@@ -37,8 +37,6 @@ const Cart = () => {
           <h1 className="w-96 "> Cart is empty. Add Items to the cart!</h1>
         )}
         <RestaurantMenuItems items={cartItems} />
-        {/* <RestaurantMenuItems2 items={cartItems} />
-        <RestaurantMenuItems3 items={cartItems} /> */}
       </div>
       <div className="foot">
         <Footer/>
