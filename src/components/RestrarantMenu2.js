@@ -6,6 +6,7 @@ import { UserContext } from "../App";
 
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from "react-toastify";
+import Footer from "./Footer";
 
 const RestaurantMenu2 = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -147,31 +148,31 @@ const RestaurantMenu2 = ({ items }) => {
                 </div>
               ))
             : filterRestaurant?.map((item, index) => (
-                <div className=" cards1 ">
+                <div className=" cards2 ">
                   <div
                     className=""
                     // onClick={() => toggleItem(index)}
                     key={item.id}
                   >
-                    <p className="pi2">{item.itemName}</p>
+                    <p className="pi1">{item.itemName}</p>
                   </div>
 
                   {expanded && (
                     <div className="">
                       <div>
-                        <p className="pi2">{item.category}</p>
-                        <p className="pi3">Price : Rs.{item.price}/-</p>
+                        <p className="pi22">{item.category}</p>
+                        <p className="pi32">Price : Rs.{item.price}/-</p>
                       </div>
-                      <div className="">
+                      <div className="btnimg2">
                         <div>
                           <img
-                            className="img"
+                            className="img1"
                             src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
                             alt={`menu of ${item.id}`}
                           />
 
                           <button
-                            className="add  "
+                            className="add1  "
                             onClick={() => handleAddItem(item)}
                           >
                             +ADD
@@ -186,6 +187,7 @@ const RestaurantMenu2 = ({ items }) => {
         </div>
       </div>
       <ToastContainer/>
+      <Footer/>
     </div>
   );
 };

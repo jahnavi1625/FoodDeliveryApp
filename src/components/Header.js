@@ -70,7 +70,7 @@ const Header = () => {
         
         <li>
           <Link to="/cart" className="link">
-            <p className="cart ">CART <FaShoppingCart/> {cartItems.length}</p>
+            <p className="cart "> <FaShoppingCart className="cart-icon" /> {cartItems.length}</p>
           </Link>
           {/* <h3 className="m-2 w-32 text-white font-bold">Cart</h3> */}
         </li>

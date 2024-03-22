@@ -27,6 +27,7 @@
     height: 100px;
     width:100%;
     background-color: rgb(31, 163, 161);
+    /* position: fixed; */
 }
 .loc{
     height: 5px;
@@ -53,9 +54,9 @@
     color: black;
 }
 .image{
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 0px;
-    width:60px;
+    width:70px;
     height: 80px;
     position: relative;
     top: 10px;
@@ -73,12 +74,18 @@
 .cart{
     position: relative;
     left: 120px;
-    font-size: 15px;
+    font-size: 25px;
     top: -5px;
     height: 40px;
     color: black;
     background-color: rgb(202, 160, 35);
-    padding: 4px;
+    padding: 1px;
+    
+}
+.cart-icon{
+    height: 30px;
+    width: 40px;
+    padding: 2px;
 }
 .login{
      font-size: 15px;
@@ -94,7 +101,7 @@
     width: 100%;
 }
 .imageslide{
-    height: 500px;
+    height: 600px;
     width: 100%;
     position: relative;
 }
@@ -227,7 +234,7 @@
 }
 .body{
     width: 100%;
-    height: 450px;
+    height: 500px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -284,7 +291,7 @@
     margin-top: 20px;
 }
 .footer{
-    position: relative;
+    
    padding: 5px;
     height: 400px;
     width: 100%;
@@ -294,6 +301,11 @@
     background-color: black;
     color: white;
     
+}
+.foot{
+    position: fixed;
+    top: 500px;
+    width: 100%;
 }
 .google{
     height: 50px;
@@ -319,7 +331,7 @@
     font-size: 15px;
     color: white;
 }
-.pi2{
+.pi1{
     font-size: 20px;
     font-weight: bold;
 }
@@ -595,6 +607,45 @@
     font-size: 25px;
     font-weight: bold;
 }
+.pi1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.pi22,.pi32{
+    font-size: 15px;
+    color: white;
+}
+.cards2{
+    height: 200px;
+    width: 220px;
+    background-color: rgb(44, 17, 49);
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+.btnimg2{
+   position: relative;
+   display: inline-block;
+}
+.img1{
+    height: 70px;
+    width: 70px;
+    float: right;
+}
+
+ .add1{
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    color: green;
+    font-weight: bold;
+ }
 
 @media  screen and  (max-width:320px){
     .head{
@@ -609,7 +660,7 @@
         width: 10px;
         font-size: 4px;
         position: relative;
-        left: 20px;
+        left: 40px;
         top: -20px;
         display: inline;
         font-weight: bold;
@@ -626,7 +677,7 @@
         position: relative;
         top: -41px;
         font-weight: bold;
-        left: 150px;
+        left: 165px;
         font-size: 4px ;
         list-style-type: none;
         text-decoration: none;
@@ -666,7 +717,7 @@
         left: 15px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 26px;
+        width: 20px;
         margin: 0;
         font-size: 3px;
         padding: 0;
@@ -676,6 +727,12 @@
         color: black;
         border: 1px solid black;
     }
+    .cart-icon{
+        height: 10px;
+        width: 15px;
+        padding: 2px;
+    }
+   
     .login{
         font-weight: bold;
         background-color: rgb(207, 167, 22);
@@ -711,7 +768,7 @@
         width: 20px;
         position: absolute;
         top:80px;
-        left: 220px;
+        left: 280px;
         display: flex;
         justify-content: center;
         background-color: black;
@@ -721,7 +778,7 @@
         height: 120px;
         width: 70px;
         position: relative;
-        left: 10px;
+        left: 30px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -730,7 +787,7 @@
         height: 120px;
         width: 70px;
         position: relative;
-        left: 20px;
+        left: 40px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -739,7 +796,7 @@
         height: 120px;
         width: 70px;
         position: relative;
-        left: 30px;
+        left: 50px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         color: black;
@@ -854,7 +911,7 @@
     }
     .ul2{
         position: relative;
-        left: -30px;
+        left: -40px;
         list-style-type: none;
         text-align: center;
         font-style: italic;
@@ -869,8 +926,8 @@
     }
     .footer{
         position: relative;
-       padding: 10px;
-        height: 400px;
+       padding: 5px;
+        height: 100px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -878,6 +935,11 @@
         background-color: black;
         color: white;
         
+    }
+    .foot{
+        position: fixed;
+        top: 630px;
+        width: 100%;
     }
     .google{
         height: 20px;
@@ -889,74 +951,123 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        align-items: center;
-    }
-    .ch1,.ch3,.ch4{
-        margin: 0;
+        align-items: left;
+        margin-left: 30px;
+       padding: 20px 0 0 0;
+        
     }
     .ch1{
-        font-size: 8px;
+        font-size: 10px;
         font-weight: bold;
     }
-    .ch4,.ch3{
-        font-size: 5px;
+    .ch3,.ch4{
+        margin: 0;
+        font-size: 8px;
     }
     .inp{
-       position: relative;
-       left: 70px;
-       top: -50px;
-       height: 10px;
-       padding: 3px;
-    }
-    .input{
-        width: 60px;
-        height: 10px;
-        margin: 0;
-        font-size: 7px;
-    }
-    .inputbut{
-        width: 20px;
-        height: 10px;
-        margin: 0;
-        padding: 0;
-        display: inline;
-        font-size: 4px;
         position: relative;
-        top: -2px;
-    }
+        left: 100px;
+        top: -90px;
+        height: 10px;
+        padding: 3px;
+     }
+     .input{
+         width: 70px;
+         height: 15px;
+         margin: 0;
+         font-size: 8px;
+     }
+    
+     .inputbut{
+         width: 25px;
+         height: 15px;
+         margin: 0;
+         padding: 0;
+         display: inline;
+         font-size: 6px;
+         background-color: rgb(53, 122, 175);
+         color: white;
+         font-weight: bold;
+         text-align: center;
+     }
     .cards1{
-        height: 60px;
-        width: 80px;
+        height: 65px;
+        width: 70px;
         background-color: rgb(44, 17, 49);
         color: white;
-        /* padding: 2px; */
+        /* padding: 0px; */
     }
     .pi{
         font-size: 6px;
     }
     .pi2,.pi3{
-        font-size: 5px;
+        font-size: 4px;
+        position: relative;
+        top: -10px;
+      
     }
-
+    
     .img{
         height: 20px;
-        width: 25px;
+        width: 20px;
         position: relative;
-        top: -70px;
-        left: 30px;
+        top: -50px;
+        left: 35px;
         float: right;
     }
     .add{
         position: absolute;
-        top: -70px;
-        left: 50px;
+        top: -50px;
+        left: 40px;
         width: 15px;
-        height: 15px;
+        height: 10px;
         font-size: 3px;
         margin: 0;
         padding: 0;
         
     }
+    /* .pi2,.pi3{
+        font-size: 8px;
+        color: white;
+    } */
+    .pi1{
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .pi22,.pi32{
+        font-size: 6px;
+        color: white;
+    }
+    .cards2{
+        height: 70px;
+        width: 80px;
+        background-color: rgb(44, 17, 49);
+        color: white;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .btnimg2{
+       position: relative;
+       display: inline-block;
+    }
+    .img1{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: -50px;
+        left: 40px; 
+    }
+    
+     .add1{
+        position: absolute;
+        top: -30px;
+        left: 50px;
+        width: 15px;
+        height: 10px;
+        font-size: 3px;
+        margin: 0;
+        padding: 0;
+     }
     .butimg{
         position: relative;
         display: inline-block; 
@@ -976,7 +1087,7 @@
         background-color: black;
         color: rgb(38, 189, 179);
         width: 150px;
-        height: 100px;
+        height: 110px;
         padding: 4px;
         position: relative;
         left: 60px;
@@ -991,19 +1102,20 @@
         display: flex;
         flex-direction: column;
         margin: 0;
+        margin-bottom: 1px;
     }
     .sub{
-        width: 30px;
-        height: 5px;
-        
+        width: 20px;
+        height: 10px;
+        padding: 0;
         position: relative;
         top:1px;
         text-align: start;
-        font-size: 3px;
+        font-size: 4px;
         margin: 0;
     }
     .label1{
-        font-size: 7px;
+        font-size: 6px;
         margin: 0;
     }
     .box{
@@ -1012,12 +1124,15 @@
         width: 50%;
     }
     .user{
-        font-size: 8px;
+        font-size: 6px;
         margin: 0;
     }
     .pass{
-        font-size: 8px;
+        font-size: 6px;
         margin: 0;
+    }
+    .guest{
+        font-size: 6px;
     }
     .cartdetails{
         display: flex;
@@ -1105,8 +1220,103 @@
     .dfle{
         margin:10px;
     }
-    
+    .cartitems1{
+        background-color:rgb(193, 193, 193);
+        color: black;
+        width: 200px;
+        height: 100px;
+       margin-left: -10px;
+        margin: 3px;
+       position: relative;
+       top: -30px;
+        left: -30px;
+    }
+    .cartte1{
+        display: flex;
+       
+        flex-direction: column;
+        height: 90px;
+        width: 150px;
+        /* background-color: rgb(220, 209, 209);s */
+        
+    }
+    .itemenu{
+        position: relative;
+        left: -30px;
+        padding: 3px;
+    }
+    .itemscon1{
+        position: relative;
+        display: inline-block;
+        left: 100px;
+        top: -70px;
+    }
+    .price1{
+        font-size: 10px;
+    }
+    .imgcart3{
+        
+        width: 50px;
+        height: 50px;
+       float: right;
+       margin-top: 10px;
+    }
+    .remove1{
+        position: absolute;
+        font-size: 6px;
+        margin-top: 5px;
+        padding: 0;
+        left: 10px;
+        height: 15px;
+        width: 30px;
+        color: green;
+        background-color: white;
+        font-weight: bold;
+    }
+    .quantity1{
+      display: flex;
+      
+      justify-content: space-around;
+      position: relative;
+      top:-70px;
+      left: 110px;
+      /* background-color: white; */
+      width: 40px;
+      padding: 0;
+      margin: 0;
+    }
+    .inc1,.dec1{
+        height: 10px;
+        width: 25px;
+        margin: 0;
+        padding: 0;
+        font-size: 5px;
+    }
+    .count1{
+      font-size: 8px;
+      margin: 0;
+      color: black;
+      padding:0px 3px 0px  3px;
+    }
+    .check{
+        width:190px ;
+        background-color: rgb(27, 27, 213);
+        color: white;
+        position: relative;
+        left: 30px;
+        top: -70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .category1{
+        font-size: 9px;
+    }
+    .categ1{
+        font-size: 12px;
+        font-weight: bold;
+    }
 }
+
 @media  screen  and (min-width:321px) and (max-width:426px){
     .head{
         margin: 0;
@@ -2474,6 +2684,8 @@
         height: 120px;
         width: 160px;
         margin: 4px;
+        position: relative;
+        left: -100px;
     }
     .cartbutton{
         background-color: black;

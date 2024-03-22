@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement } from "../utils/cartSlice";
 import { removeItem } from "../utils/cartSlice";
 import cart from "../utils/cartSlice";
+import Footer from "./Footer";
 
 const RestaurantMenuItems3 = ({ items }) => {
   // const [count, setCount] = useState(1);
@@ -61,6 +62,7 @@ const RestaurantMenuItems3 = ({ items }) => {
           
         </div>
       ))}
+      <Footer/>
     </div>
     // </div>
   );

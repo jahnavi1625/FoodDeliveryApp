@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement } from "../utils/cartSlice";
 import { removeItem } from "../utils/cartSlice";
 import cart from "../utils/cartSlice";
+import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const RestaurantMenuItems = ({ items }) => {
   // const [count, setCount] = useState(1);
@@ -29,7 +31,7 @@ const RestaurantMenuItems = ({ items }) => {
   };
   console.log(items);
   return (
-    // <div className="w-[1500px]">
+    <>
     <div className="cartte1  ">
       {items?.map((item, index) => (
         <div className="cartitems1 " key={item.id}>
@@ -56,13 +58,20 @@ const RestaurantMenuItems = ({ items }) => {
                 -
               </button>
             </div>
-            <button className="check">Checkout</button>
+            {/* <Link to="/check"> */}
+            <button className="check" >Checkout</button>
+            {/* </Link> */}
+            
           </div>
           
         </div>
       ))}
+      
     </div>
-    // </div>
+    {/* <div className="foot">
+    <Footer/>
+    </div> */}
+     </>
   );
 };
 

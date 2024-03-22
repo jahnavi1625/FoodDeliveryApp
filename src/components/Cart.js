@@ -6,6 +6,7 @@ import RestaurantMenu from "./RestaurantMenu";
 import RestaurantMenuItems from "./RestaurantMenuItems";
 import RestaurantMenuItems2 from "./RestaurantMenuItems2";
 import RestaurantMenuItems3 from "./RestaurantMenuItems3";
+import Footer from "./Footer";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
@@ -39,6 +40,10 @@ const Cart = () => {
         {/* <RestaurantMenuItems2 items={cartItems} />
         <RestaurantMenuItems3 items={cartItems} /> */}
       </div>
+      <div className="foot">
+        <Footer/>
+      </div>
+      
       </div>
     
   );
