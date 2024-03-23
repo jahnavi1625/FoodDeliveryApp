@@ -493,7 +493,13 @@
     background-color: rgb(27, 27, 213);
     color: white;
     position: relative;
-    left: 40px;
+    left: 5px;
+    font-size: 20px;
+    height: 40px;
+    width: 1000px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
     /* top: -60px; */
 }
 .imagecart2{
@@ -656,6 +662,12 @@
     top: -50px;
     font-weight: bold;
     font-size: 30px;
+ }
+ .total{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+   
  }
 
 @media  screen and  (max-width:320px){
@@ -936,16 +948,19 @@
         font-style: italic;
     }
     .footer{
-        position: relative;
-       padding: 5px;
+        position: fixed;
+       /* padding: 5px; */
+       left: 0px;
         height: 100px;
-        width: 100%;
+        width: 320px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         background-color: black;
         color: white;
-        
+        padding: 0;
+        margin: 0;
+        /* top: 300px; */
     }
     .foot{
         position: fixed;
@@ -1221,6 +1236,7 @@
     .count{
       font-size: 8px;
       margin: 0;
+      /* color: black; */
     }
     .category,.price{
         font-size: 8px;
@@ -1246,7 +1262,7 @@
         display: flex;
        
         flex-direction: column;
-        height: 90px;
+        height: 1000px;
         width: 150px;
         /* background-color: rgb(220, 209, 209);s */
         
@@ -1306,7 +1322,7 @@
     .count1{
       font-size: 8px;
       margin: 0;
-      color: black;
+      color: white;
       padding:0px 3px 0px  3px;
     }
     .check{
@@ -1326,6 +1342,37 @@
         font-size: 12px;
         font-weight: bold;
     }
+    .check{
+        width:900px ;
+        background-color: rgb(27, 27, 213);
+        color: white;
+        position: relative;
+        left: -27px;
+        font-size: 10px;
+        height: 20px;
+        width: 200px;
+        font-weight: bold;
+        top: -30px;
+    }
+    .total{
+        height: 30px;
+        font-size: 10px;
+        font-weight: bold;
+       margin: 0;
+       padding: 0;
+     }
+     .proceed{
+        height: 20px;
+        font-size: 10px;
+     }
+     .notfound{
+        position: relative;
+        left: 100px;
+        margin-top: 0;
+        top: -80px;
+        font-weight: bold;
+        font-size: 15px;
+     }
 }
 
 @media  screen  and (min-width:321px) and (max-width:426px){

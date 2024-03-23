@@ -44,9 +44,9 @@ const Payment = ({checkitems}) => {
   console.log(checkitems);
   
   return (
-    <div className="cartte1  ">
+    <div className="cartte1   ">
       {checkitems?.map((item, index) => (
-        <div className="cartitems1 " key={item.id}>
+        <div className="cartitems1 bg-dark text-white" key={item.id}>
           <div className="itemenu">
           <h1 className="categ1 ">{item.itemName}</h1>
           <h3 className="category1">{item.category}</h3>
@@ -78,16 +78,12 @@ const Payment = ({checkitems}) => {
           
         </div>
       ))}
-      <div className="w-1000px border border-solid-black d-flex justify-between ">
-        <div>
-        Total:
-        </div>
-        
-        <div text-end>
-        ${totoalPrice()}
+      <div className="total w-1000px  border border-solid-black d-flex justify-between bg-secondary ">
+        <div className=" text-white font-bold">
+        Total:${totoalPrice()}
         </div>
         </div>
-      <button className="bg-primary" onClick={notify} >ProceedToPay</button>
+      <button className="proceed bg-primary " onClick={notify} >ProceedToPay</button>
       <ToastContainer/>
     </div>
   )

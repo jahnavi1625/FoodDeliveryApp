@@ -73,8 +73,10 @@ const RestaurantMenuItems = ({ items }) => {
           
         </div>
       ))}
-      <button className="check" onClick={()=>{checkFunc(items)}} >Checkout</button>
+      <div className="">
+      <p className="check" >See Checkout Page Below</p>
       <Payment checkitems={items}/>
+      </div>
     </div>
     {/* <div className="foot">
     <Footer/>
