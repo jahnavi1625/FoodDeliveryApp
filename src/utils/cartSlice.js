@@ -15,15 +15,10 @@ const cartSlice = createSlice({
     addItem: (state, action) => {
       state.items.push(action.payload);
       localStorage.setItem("cart", JSON.stringify(state.items));
-      // localStorage.setItem('cart',state.items);
-      // return [...state,action.payload]
     },
     removeItem: (state, action) => {
       state.items = state.items.filter((item) => item.id !== action.payload.id);
       localStorage.setItem("cart", JSON.stringify(state.items));
-      // localStorage.removeItem('cart',state.items);
-      // return state.items.filter(product=>product.itemName!==action.payload.itemName);
-      // state.items.pop(action.payload);
     },
 
     clearCart: () => {

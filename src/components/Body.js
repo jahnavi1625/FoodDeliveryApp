@@ -21,9 +21,7 @@ const Body = () => {
     const newData = await data.json();
     console.log(newData);
     setResInfo(newData);
-    // const {Name,Ratings,Locality,AreaName,City,Cuisines}=json;
-    // console.log(Name)
-    // setResInfo(data);
+
   };
 
   const fetchData2 = async () => {
@@ -32,9 +30,7 @@ const Body = () => {
     const newData = await data.json();
     console.log(newData);
     setResInfo2(newData);
-    // const {Name,Ratings,Locality,AreaName,City,Cuisines}=json;
-    // console.log(Name)
-    // setResInfo(data);
+
   };
 
   const fetchData3 = async () => {
@@ -43,9 +39,7 @@ const Body = () => {
     const newData = await data.json();
     console.log(newData);
     setResInfo3(newData);
-    // const {Name,Ratings,Locality,AreaName,City,Cuisines}=json;
-    // console.log(Name)
-    // setResInfo(data);
+
   };
 
   const params = useParams();

@@ -3,20 +3,12 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
 import { UserContext } from "../App";
-
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import Footer from "./Footer";
 
-const RestaurantMenu3 = ({ items }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+const RestaurantMenu3 = () => {
   const [expanded, setExpanded] = useState(true);
-
-  // const toggleItem = (index) => {
-  //   // setOpenIndex((prev) => (prev === index ? null : index));
-  //   setExpanded((prev)=>(prev===index) ? null:index);
-  // };
-
   const [showItem, setShowItem] = useState([]);
   const [resInfo, setResInfo] = useState([]);
   const [filterRestaurant, setFilterRestaurant] = useState(resInfo);
@@ -34,18 +26,13 @@ const RestaurantMenu3 = ({ items }) => {
 
   const fetchData = async () => {
     const data = await fetch("http://localhost:3002/data3");
-    // console.log(data);
     const json = await data.json();
-    // console.log(json);
     setResInfo(json);
-    // setFilterRestaurant(json);
   };
 
   const fetchMain = async () => {
     const data = await fetch("http://localhost:3002/About3");
-    // console.log(data);
     const json = await data.json();
-    // console.log(json);
     setShowItem(json);
   };
 
@@ -53,7 +40,7 @@ const RestaurantMenu3 = ({ items }) => {
 
   const handleAddItem = (item) => {
     if (isLoggedIn) {
-      toast(`${item.itemName} is added to cart`)
+      toast(`${item.itemName} is added to cart`);
       dispatch(addItem(item));
     } else {
       navigate("/login", {
@@ -63,13 +50,9 @@ const RestaurantMenu3 = ({ items }) => {
   };
 
   const filterItems = () => {
-    // console.log(searchText);
     const newRes = resInfo.filter((restaurant) =>
-      // console.log(restaurant)
       restaurant.itemName.toLowerCase().includes(searchText.toLowerCase())
     );
-    //setList(filterRestaurant);
-
     setFilterRestaurant(newRes);
   };
 
@@ -78,7 +61,6 @@ const RestaurantMenu3 = ({ items }) => {
     filterItems();
   };
   console.log(filterRestaurant);
-  // const notify = () => toast("Item is added to cart");
 
   return (
     <div className="restro">
@@ -111,11 +93,7 @@ const RestaurantMenu3 = ({ items }) => {
             ? resInfo?.map((item, index) => (
                 <div className=" p-2  ">
                   <div className="cards1 ">
-                    <div
-                      className=""
-                      // onClick={()=> toggleItem(index)}
-                      key={item.id}
-                    >
+                    <div className="" key={item.id}>
                       <p className="pi ">{item.itemName}</p>
                     </div>
 
@@ -127,7 +105,6 @@ const RestaurantMenu3 = ({ items }) => {
                         </div>
                         <div className="butimg">
                           <div>
-                            
                             <img
                               className="img "
                               src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
@@ -139,7 +116,6 @@ const RestaurantMenu3 = ({ items }) => {
                             >
                               +ADD
                             </button>
-                            
                           </div>
                         </div>
                       </div>
@@ -149,11 +125,7 @@ const RestaurantMenu3 = ({ items }) => {
               ))
             : filterRestaurant?.map((item, index) => (
                 <div className=" cards2 ">
-                  <div
-                    className=""
-                    // onClick={() => toggleItem(index)}
-                    key={item.id}
-                  >
+                  <div className="" key={item.id}>
                     <p className="pi1">{item.itemName}</p>
                   </div>
 
@@ -177,7 +149,6 @@ const RestaurantMenu3 = ({ items }) => {
                           >
                             +ADD
                           </button>
-                          {/* <button onClick={notify}>Notify!</button> */}
                         </div>
                       </div>
                     </div>
@@ -185,9 +156,14 @@ const RestaurantMenu3 = ({ items }) => {
                 </div>
               ))}
         </div>
+        <div>
+          {filterRestaurant.length === 0 && (
+            <p className="notfound">Item not found</p>
+          )}
+        </div>
       </div>
-      <ToastContainer/>
-      <Footer/>
+      <ToastContainer />
+      <Footer />
     </div>
   );
 };

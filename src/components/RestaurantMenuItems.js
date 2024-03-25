@@ -1,32 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement } from "../utils/cartSlice";
 import { removeItem } from "../utils/cartSlice";
-import cart from "../utils/cartSlice";
-import { Link } from "react-router-dom";
-import Footer from "./Footer";
 import Payment from "./Payment";
 import { useNavigate } from "react-router-dom";
 
 const RestaurantMenuItems = ({ items }) => {
-  // const [count, setCount] = useState(1);
   const counter = useSelector((state) => state.cart.counter);
-  // const cart = useSelector(state => state.cart);
-
-  // // Now you can access properties of cart state
-  // const { items, counter } = cart;
   const navigate=useNavigate();
   console.log(counter);
-  // console.log(count);
   const dispatch = useDispatch();
 
   const removeItems = (item) => {
     dispatch(removeItem(item));
   };
   const incrementItem = (itemId) => {
-    // setCount(count+1);
     dispatch(increment(itemId));
-    // console.log(itemId);
   };
   const decrementItem = (itemId) => {
     dispatch(decrement(itemId));
@@ -65,10 +54,6 @@ const RestaurantMenuItems = ({ items }) => {
                 -
               </button>
             </div>
-            {/* <Link to="/check"> */}
-            
-            {/* </Link> */}
-            
           </div>
           
         </div>
@@ -78,10 +63,6 @@ const RestaurantMenuItems = ({ items }) => {
       <Payment checkitems={items}/>
       </div>
     </div>
-    {/* <div className="foot">
-    <Footer/>
-    </div> */}
-    
      </>
   );
 };

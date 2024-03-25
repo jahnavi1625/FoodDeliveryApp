@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cartReducer from "./cartSlice"
-import { json } from "react-router-dom";
+import cartReducer from "./cartSlice";
 
 const preloadState={
   cart:{
