@@ -847,7 +847,7 @@
         height: 120px;
         width: 70px;
         position: relative;
-        left: 30px;
+        left: 10px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -856,7 +856,7 @@
         height: 120px;
         width: 70px;
         position: relative;
-        left: 40px;
+        left: 10px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -865,7 +865,7 @@
         height: 120px;
         width: 70px;
         position: relative;
-        left: 50px;
+        left: 10px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         color: black;
@@ -1554,7 +1554,7 @@
         width: 25px;
         position: absolute;
         top:80px;
-        left: 300px;
+        left: 350px;
         display: flex;
         justify-content: center;
         background-color: black;
@@ -1564,7 +1564,7 @@
         height: 170px;
         width: 90px;
         position: relative;
-        left: 30px;
+        left: 10px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -1573,7 +1573,7 @@
         height: 170px;
         width: 90px;
         position: relative;
-        left: 40px;
+        left: 10px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -1582,7 +1582,7 @@
         height: 170px;
         width: 90px;
         position: relative;
-        left: 50px;
+        left: 10px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         color: black;
