@@ -34,7 +34,7 @@ const Payment = ({ checkitems }) => {
   console.log(checkitems);
 
   return (
-    <div className="cartte1   ">
+    <div className="cartte11   ">
       {checkitems?.map((item, index) => (
         <div className="cartitems1 bg-dark text-white" key={item.id}>
           <div className="itemenu">
@@ -44,9 +44,7 @@ const Payment = ({ checkitems }) => {
               Price : Rs.{item.price * item.counter}/-
             </h4>
             <div className="itemscon1">
-              <button className=" remove1" onClick={() => removeItems(item)}>
-                Remove
-              </button>
+              
               <img
                 className="imgcart3 "
                 src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
@@ -54,19 +52,15 @@ const Payment = ({ checkitems }) => {
               />
             </div>
             <div className="quantity1">
-              <button className="inc1" onClick={() => incrementItem(item.id)}>
-                +
-              </button>
-              <h1 className="count1">{item.counter}</h1>
-              <button className="dec1" onClick={() => decrementItem(item.id)}>
-                -
-              </button>
+              
+              <h1 className="count12">No of items : {item.counter}</h1>
+              
             </div>
           </div>
         </div>
       ))}
-      <div className="total w-1000px  border border-solid-black d-flex justify-between bg-secondary ">
-        <div className=" text-white font-bold">Total:${totoalPrice()}</div>
+      <div className="total   border border-solid-black d-flex justify-between bg-secondary ">
+        <div className=" text-white text-center ">Total:${totoalPrice()}</div>
       </div>
       <button className="proceed bg-primary " onClick={notify}>
         ProceedToPay

@@ -123,7 +123,12 @@ const RestaurantMenu = () => {
                   </div>
                 </div>
               ))
-            : filterRestaurant?.map((item, index) => (
+            :filterRestaurant.length === 0 ? (
+              <p className="notfound">Item not found</p>
+            ):
+            
+            
+            filterRestaurant?.map((item, index) => (
                 <div className=" cards2 ">
                   <div className="" key={item.id}>
                     <p className="pi1">{item.itemName}</p>
@@ -134,7 +139,14 @@ const RestaurantMenu = () => {
                       <div>
                         <p className="pi22">{item.category}</p>
                         <p className="pi32">Price : Rs.{item.price}/-</p>
+                        <button
+                            className="add1 "
+                            onClick={() => handleAddItem(item)}
+                          >
+                            +ADD
+                          </button>
                       </div>
+                     
                       <div className="btnimg2">
                         <div>
                           <img
@@ -143,12 +155,7 @@ const RestaurantMenu = () => {
                             alt={`menu of ${item.id}`}
                           />
 
-                          <button
-                            className="add1  "
-                            onClick={() => handleAddItem(item)}
-                          >
-                            +ADD
-                          </button>
+                          
                         </div>
                       </div>
                     </div>
@@ -157,9 +164,7 @@ const RestaurantMenu = () => {
               ))}
         </div>
         <div>
-          {filterRestaurant.length === 0 && (
-            <p className="notfound">Item not found</p>
-          )}
+          
         </div>
       </div>
       <ToastContainer />

@@ -27,7 +27,7 @@ const RestaurantMenuItems = ({ items }) => {
 
   console.log(items);
   return (
-    <>
+    <><div className="flexCheck">
     <div className="cartte1  ">
       {items?.map((item, index) => (
         <div className="cartitems1 " key={item.id}>
@@ -36,9 +36,7 @@ const RestaurantMenuItems = ({ items }) => {
           <h3 className="category1">{item.category}</h3>
           <h4 className="price1 ">Price : Rs.{item.price*item.counter}/-</h4>
           <div className="itemscon1">
-            <button className=" remove1" onClick={() => removeItems(item)}>
-              Remove
-            </button>
+            
             <img
               className="imgcart3 "
               src="https://up.yimg.com/ib/th?id=OIP.uYLZRXytpaJr-QyFW1QHEwHaEo&pid=Api&rs=1&c=1&qlt=95&w=157&h=98"
@@ -53,16 +51,21 @@ const RestaurantMenuItems = ({ items }) => {
               <button className="dec1" onClick={() => decrementItem(item.id)}>
                 -
               </button>
+              <button className=" remove1" onClick={() => removeItems(item)}>
+              Remove
+            </button>
             </div>
           </div>
           
         </div>
       ))}
-      <div className="">
+      
+    </div>
+    <div className="checkoutPage">
       <p className="check" >See Checkout Page Below</p>
       <Payment checkitems={items}/>
       </div>
-    </div>
+      </div>
      </>
   );
 };

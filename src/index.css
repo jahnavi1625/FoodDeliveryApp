@@ -74,18 +74,20 @@
 .cart{
     position: relative;
     left: 120px;
-    font-size: 25px;
-    top: -5px;
+    font-size: 22px;
+    top: -7px;
     height: 40px;
+    margin: 0;
+    padding: 0;
     color: black;
-    background-color: rgb(202, 160, 35);
+    /* background-color: rgb(202, 160, 35); */
     padding: 1px;
     
 }
 .cart-icon{
-    height: 30px;
-    width: 40px;
-    padding: 2px;
+    height: 23px;
+    width: 35px;
+   
 }
 .login{
      font-size: 15px;
@@ -148,7 +150,8 @@
     left: 350px;
     background-image: linear-gradient(blue,cyan);
     padding: 6px;
-    margin-top: 30px;
+    margin: 30px;
+    padding: 8px;
 }
 .card3{
     height: 370px;
@@ -365,10 +368,12 @@
     left: 140px;
 }
 .add{
-    position: absolute;
+    position: relative;
     color: green;
     background-color: white;
     font-weight: bold;
+    left: -100px;
+    top: -40px;
 }
 .cardsflex{
     display: flex;
@@ -437,10 +442,11 @@
 
  .inputbut{
      width: 70px;
-     height: 35px;
+     height: 34px;
      margin: 0;
-     display: inline;
-     font-size: 10px;
+     position: relative;
+     left: 20px;
+     font-size: 14px;
      background-color: rgb(53, 122, 175);
      color: white;
      font-weight: bold;
@@ -465,12 +471,12 @@
 .cartbutton{
     background-color: black;
     color: white;
-    width: 80px;
-    height: 30px;
-    font-size: 10px;
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
     /* vertical-align: top; */
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
 }
 .cartitems{
     background-color:rgb(44, 17, 49);
@@ -488,20 +494,7 @@
 .flexcart{
     margin: 4px;
 }
-.check{
-    width:900px ;
-    background-color: rgb(27, 27, 213);
-    color: white;
-    position: relative;
-    left: 5px;
-    font-size: 20px;
-    height: 40px;
-    width: 1000px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    /* top: -60px; */
-}
+
 .imagecart2{
     position: relative;
     /* left: 30px; */
@@ -518,13 +511,13 @@
   top:-15px;
   left: 130px;
   background-color: white;
-  width: 20px;
+  width: 50px;
 }
 .inc,.dec{
     height: 20px;
-    width: 20px;
+    width:40px;
     margin: 0;
-    font-size: 15px;
+    font-size: 20px;
 }
 .count{
   font-size: 15px;
@@ -540,34 +533,41 @@
 .dfle{
     margin:10px;
 }
+.flexCheck{
+    display: flex;
+    flex-direction: row;
+}
 .cartitems1{
     background-color:rgb(193, 193, 193);
     color: black;
-    width: 1000px;
-    height: 200px;
+    width: 700px;
+    height: 170px;
     margin: 20px;
     margin: 3px;
-   
-    
+   padding: 8px;
+   position: relative;
+   left: -50px;
+    /* top: 10px; */
 }
 .cartte1{
     display: flex;
    
     flex-direction: column;
     height: 100px;
-    width: 1000px;
+    width: 600px;
     /* background-color: rgb(220, 209, 209);s */
     
 }
 .itemenu{
     position: relative;
-    left: -350px;
+    left: -200px;
     padding: 3px;
+    /* top:-70px ; */
 }
 .itemscon1{
     position: relative;
-    left: 700px;
-    top: -70px;
+    left: 400px;
+    top: -90px;
 }
 .imagecart3{
     position: relative;
@@ -577,9 +577,9 @@
 
 }
 .remove1{
-    position: absolute;
+    position: relative;
     
-    left: 450px;
+    left: 5px;
     color: green;
     background-color: white;
     font-weight: bold;
@@ -589,19 +589,23 @@
   
   justify-content: space-around;
   position: relative;
-  top:-70px;
-  left: 1150px;
+  top:-80px;
+  left: 660px;
   /* background-color: white; */
-  width: 20px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
 }
 .inc1,.dec1{
-    height: 20px;
-    width: 20px;
+   
+    height: 35spx;
+    width: 50px;
     margin: 0;
-    font-size: 15px;
+    padding: 0;
+    font-size: 20px;
 }
 .count1{
-  font-size: 15px;
+  font-size: 25px;
   margin: 0;
   color: black;
   padding:0px 3px 0px  3px;
@@ -613,6 +617,39 @@
     font-size: 25px;
     font-weight: bold;
 }
+.inc12,.dec12{
+   
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.count12{
+    font-size: 20px;
+}
+.checkoutPage{
+    position: relative;
+    left: 40px;
+}
+.check{
+    width:900px ;
+    background-color: rgb(27, 27, 213);
+    color: white;
+    position: relative;
+    left: 55px;
+    font-size: 20px;
+    height: 40px;
+    width: 700px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    /* top: -60px; */
+}
+.cartte11{
+    position: relative;
+    left: 100px;
+}
 .pi1{
     font-size: 20px;
     font-weight: bold;
@@ -622,28 +659,31 @@
     color: white;
 }
 .cards2{
-    height: 200px;
-    width: 220px;
+    height: 180px;
+    width: 250px;
     background-color: rgb(44, 17, 49);
     color: white;
     margin-right: 10px;
     margin-bottom: 10px;
-    padding: 2px;
+    padding: 5px;
 }
 .btnimg2{
    position: relative;
-   display: inline-block;
+   /* display: inline-block; */
+   
+   left:20px;
+   top: -19px;
 }
 .img1{
     height: 70px;
     width: 70px;
-    float: right;
+    /* float: right; */
 }
 
  .add1{
-    position: absolute;
-    top: -30px;
-    left: 100px;
+    position: relative;
+    /* top: -30px; */
+    left: 10px;
     width: 50px;
     height: 30px;
     font-size: 10px;
@@ -654,10 +694,11 @@
  }
  .cartte1{
     height: 1500px;
+  
  }
  .notfound{
     position: relative;
-    left: 600px;
+    /* left: -100px; */
     margin-top: 0;
     top: -50px;
     font-weight: bold;
@@ -665,12 +706,17 @@
  }
  .total{
     height: 50px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-   
+    position: relative;
+    left: -48px;
+    
  }
-
-@media  screen and  (max-width:320px){
+  .proceed{
+    height: 50px;
+    color: white;
+  }
+@media  screen and  (max-width:375px){
     .head{
         margin: 0;
         padding: 0;
@@ -700,7 +746,7 @@
         position: relative;
         top: -41px;
         font-weight: bold;
-        left: 165px;
+        left: 140px;
         font-size: 4px ;
         list-style-type: none;
         text-decoration: none;
@@ -740,30 +786,30 @@
         left: 15px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 20px;
+        width: 25px;
         margin: 0;
-        font-size: 3px;
+        font-size: 6px;
         padding: 0;
         text-align: left;
-        height: 8px;
-        top: -2px;
+        height: 10px;
+        top: -3px;
         color: black;
         border: 1px solid black;
     }
     .cart-icon{
         height: 10px;
         width: 15px;
-        padding: 2px;
+        
     }
    
     .login{
         font-weight: bold;
         background-color: rgb(207, 167, 22);
         position: relative;
-       top: -3px;
+       top: -4px;
        left: 20px;
-       width: 18px;
-       height: 10px;
+       width: 20px;
+       height: 12px;
        font-size: 4px;
        padding: 0;
     }
@@ -1065,7 +1111,7 @@
         color: white;
     }
     .cards2{
-        height: 70px;
+        height: 90px;
         width: 80px;
         background-color: rgb(44, 17, 49);
         color: white;
@@ -1073,8 +1119,11 @@
         margin-bottom: 10px;
     }
     .btnimg2{
-       position: relative;
-       display: inline-block;
+        position: relative;
+        /* display: inline-block; */
+        
+        left:2px;
+        top: -40px;
     }
     .img1{
         height: 30px;
@@ -1085,9 +1134,9 @@
     }
     
      .add1{
-        position: absolute;
+        position: relative;
         top: -30px;
-        left: 50px;
+        left: 0px;
         width: 15px;
         height: 10px;
         font-size: 3px;
@@ -1247,16 +1296,17 @@
     .dfle{
         margin:10px;
     }
+    
     .cartitems1{
         background-color:rgb(193, 193, 193);
         color: black;
-        width: 200px;
+        width: 150px;
         height: 100px;
        margin-left: -10px;
         margin: 3px;
        position: relative;
        top: -30px;
-        left: -30px;
+        left: -8px;
     }
     .cartte1{
         display: flex;
@@ -1269,13 +1319,13 @@
     }
     .itemenu{
         position: relative;
-        left: -30px;
+        left: -20px;
         padding: 3px;
     }
     .itemscon1{
         position: relative;
         display: inline-block;
-        left: 100px;
+        left: 70px;
         top: -70px;
     }
     .price1{
@@ -1289,11 +1339,12 @@
        margin-top: 10px;
     }
     .remove1{
-        position: absolute;
+        position: relative;
         font-size: 6px;
         margin-top: 5px;
         padding: 0;
-        left: 10px;
+        left: -40px;
+        top: 6px;
         height: 15px;
         width: 30px;
         color: green;
@@ -1308,7 +1359,7 @@
       top:-70px;
       left: 110px;
       /* background-color: white; */
-      width: 40px;
+      width: 70px;
       padding: 0;
       margin: 0;
     }
@@ -1325,21 +1376,19 @@
       color: white;
       padding:0px 3px 0px  3px;
     }
-    .check{
-        width:190px ;
-        background-color: rgb(27, 27, 213);
-        color: white;
+    .checkoutPage{
         position: relative;
-        left: 30px;
-        top: -70px;
-        height: 20px;
-        font-size: 10px;
+        left: 15px;
+    }
+    .cartte11{
+        position: relative;
+        left: -5px;
     }
     .category1{
         font-size: 9px;
     }
     .categ1{
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
     }
     .check{
@@ -1347,35 +1396,45 @@
         background-color: rgb(27, 27, 213);
         color: white;
         position: relative;
-        left: -27px;
+        left: -10px;
         font-size: 10px;
         height: 20px;
-        width: 200px;
+        width: 150px;
         font-weight: bold;
         top: -30px;
     }
+    .count12{
+        font-size: 8px;
+        position: relative;
+        left: -18px;
+    }
     .total{
-        height: 30px;
-        font-size: 10px;
+        height: 20px;
+        font-size: 8px;
         font-weight: bold;
        margin: 0;
        padding: 0;
+       position: relative;
+       width: 100px;
+       left: 10px;
      }
      .proceed{
         height: 20px;
         font-size: 10px;
+        position: relative;
+        left: -20px;
      }
      .notfound{
         position: relative;
-        left: 100px;
+        left: 10px;
         margin-top: 0;
-        top: -80px;
+        top: 10px;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 13px;
      }
 }
 
-@media  screen  and (min-width:321px) and (max-width:426px){
+@media  screen  and (min-width:375px) and (max-width:426px){
     .head{
         margin: 0;
         padding: 0;
@@ -1405,7 +1464,7 @@
         position: relative;
         top: -45px;
         font-weight: bold;
-        left: 280px;
+        left: 210px;
         font-size: 4px ;
         list-style-type: none;
         text-decoration: none;
@@ -1445,15 +1504,20 @@
         left: 15px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 26px;
+        width: 25px;
         margin: 0;
-        font-size: 3px;
+        font-size: 6px;
         padding: 0;
         text-align: left;
-        height: 8px;
-        top: -2px;
+        height: 10px;
+        top: -3px;
         color: black;
         border: 1px solid black;
+    }
+    .cart-icon{
+        height: 10px;
+        width: 15px;
+        padding: 2px;
     }
     .login{
         font-weight: bold;
@@ -1490,7 +1554,7 @@
         width: 25px;
         position: absolute;
         top:80px;
-        left: 370px;
+        left: 300px;
         display: flex;
         justify-content: center;
         background-color: black;
@@ -1500,7 +1564,7 @@
         height: 170px;
         width: 90px;
         position: relative;
-        left: 60px;
+        left: 30px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -1509,7 +1573,7 @@
         height: 170px;
         width: 90px;
         position: relative;
-        left: 70px;
+        left: 40px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         margin-top: 8px;
@@ -1518,7 +1582,7 @@
         height: 170px;
         width: 90px;
         position: relative;
-        left: 80px;
+        left: 50px;
         background-image: linear-gradient(blue,cyan);
         padding: 3px;
         color: black;
@@ -1669,12 +1733,15 @@
         flex-direction: column;
         position: relative;
         align-items: center;
+        position: relative;
+        left: -130px;
     }
     .ch1,.ch3,.ch4{
         margin: 0;
+        font-size: 7px;
     }
     .ch1{
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
     }
     .ch4,.ch3{
@@ -1682,8 +1749,8 @@
     }
     .inp{
        position: relative;
-       left: 100px;
-       top: -30px;
+       left: 150px;
+       top: -80px;
        height: 10px;
        padding: 3px;
     }
@@ -1696,7 +1763,8 @@
     .inputbut{
         width: 30px;
         height: 15px;
-        display: inline;
+        position: relative;
+        left: 10px;
         font-size: 7px;
     }
     .cards1{
@@ -1705,6 +1773,8 @@
         background-color: rgb(44, 17, 49);
         color: white;
         /* padding: 2px; */
+        position: relative;
+        top: -70px;
     }
     .pi{
         font-size: 10px;
@@ -1721,9 +1791,11 @@
         left: 60px;
     }
     .add{
-        position: absolute;
+        position: relative;
         width: 30px;
         height: 20px;
+        left: -30px;
+        top: -10px;
         font-size: 5px;
         margin: 0;
         padding: 0;
@@ -1857,9 +1929,188 @@
     .categ{
         font-size: 10px;
     }
+    
     .dfle{
         margin:10px;
     }
+    .cards2{
+        height: 110px;
+        width: 100px;
+        background-color: rgb(44, 17, 49);
+        color: white;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        top: -40px;
+    }
+    .btnimg2{
+        position: relative;
+        /* display: inline-block; */
+        
+        left:20px;
+        top: -40px;
+    }
+    .img1{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: -50px;
+        left: 40px; 
+    }
+    
+     .add1{
+        position: relative;
+        top: -20px;
+        left: 0px;
+        width: 20px;
+        height: 10px;
+        font-size: 5px;
+        margin: 0;
+        padding: 0;
+     }
+     .pi1{
+        font-size: 10px;
+     }
+     .pi22,.pi32{
+        font-size: 8px;
+     }
+    .cartitems1{
+        background-color:rgb(193, 193, 193);
+        color: black;
+        width: 160px;
+        height: 100px;
+       margin-left: -10px;
+        margin: 3px;
+       position: relative;
+       top: 10px;
+        left: -18px;
+    }
+    .cartte1{
+        display: flex;
+       
+        flex-direction: column;
+        height: 1000px;
+        width: 150px;
+        /* background-color: rgb(220, 209, 209);s */
+        
+    }
+    .itemenu{
+        position: relative;
+        left: -20px;
+        padding: 3px;
+    }
+    .itemscon1{
+        position: relative;
+        display: inline-block;
+        left: 70px;
+        top: -70px;
+    }
+    .price1{
+        font-size: 10px;
+    }
+    .imgcart3{
+        
+        width: 50px;
+        height: 50px;
+       float: right;
+       margin-top: 10px;
+    }
+    .remove1{
+        position: relative;
+        font-size: 6px;
+        margin-top: 5px;
+        padding: 0;
+        left: -40px;
+        top: 6px;
+        height: 15px;
+        width: 30px;
+        color: green;
+        background-color: white;
+        font-weight: bold;
+    }
+    .quantity1{
+      display: flex;
+      
+      justify-content: space-around;
+      position: relative;
+      top:-70px;
+      left: 110px;
+      /* background-color: white; */
+      width: 70px;
+      padding: 0;
+      margin: 0;
+    }
+    .inc1,.dec1{
+        height: 10px;
+        width: 25px;
+        margin: 0;
+        padding: 0;
+        font-size: 5px;
+    }
+    .count1{
+      font-size: 8px;
+      margin: 0;
+      color: black;
+      padding:0px 3px 0px  3px;
+    }
+    .checkoutPage{
+        position: relative;
+        left: 20px;
+    }
+    .cartte11{
+        position: relative;
+        left: -5px;
+    }
+    .category1{
+        font-size: 9px;
+    }
+    .categ1{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .check{
+        width:900px ;
+        background-color: rgb(27, 27, 213);
+        color: white;
+        position: relative;
+        left: -19px;
+        font-size: 10px;
+        height: 20px;
+        width: 160px;
+        font-weight: bold;
+        top: 10px;
+    }
+    .count12{
+        font-size: 8px;
+        position: relative;
+        left: -18px;
+    }
+    .total{
+        height: 20px;
+        font-size: 8px;
+        font-weight: bold;
+       margin: 0;
+       padding: 0;
+       position: relative;
+       width: 100px;
+       left: 10px;
+       top: 10px;
+     }
+     .proceed{
+        height: 20px;
+        font-size: 10px;
+        position: relative;
+        left: -20px;
+        top: 10px;
+     }
+     .notfound{
+        position: relative;
+        left: 10px;
+        margin-top: 0;
+        top: -55px;
+        font-weight: bold;
+        font-size: 15px;
+     }
     
 }
 @media  screen and (min-width:426px) and (max-width:769px){
@@ -1924,27 +2175,32 @@
     }
     .cart{
         position: relative;
-        left: 12px;
+        left: 15px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 35px;
+        width: 30px;
         margin: 0;
+        font-size: 10px;
         padding: 0;
-        font-size: 5px;
         text-align: left;
-        height: 8px;
-        top: 4px;
+        height: 15px;
+        top: -2px;
         color: black;
         border: 1px solid black;
+    }
+    .cart-icon{
+        height: 15px;
+        width: 15px;
+       
     }
     .login{
         font-weight: bold;
         background-color: rgb(207, 167, 22);
         position: relative;
-       top: 1px;
-       left: 18px;
+       top: -1px;
+       left: 20px;
        width: 25px;
-       height: 10px;
+       height: 14px;
        font-size: 5px;
        padding: 0;
        font-weight: bold;
@@ -2151,6 +2407,8 @@
         flex-direction: column;
         position: relative;
         align-items: center;
+        position: relative;
+        left: -200px;
         
     }
     .ch1{
@@ -2163,15 +2421,16 @@
     }
     .inp{
        position: relative;
-       left: 250px;
-       top:-40px;
+       left: 350px;
+       top:-90px;
        padding: 3px;
     }
     .input{
-        width: 120px;
+        width: 130px;
         height: 20px;
         margin: 0;
         font-size: 10px;
+        
     }
     .inputbut{
         width: 40px;
@@ -2194,7 +2453,9 @@
         left: 140px;
     }
     .add{
-        position: absolute;
+        position: relative;
+        left: -80px;
+        top: 2px;
     }
     .cardsflex{
         display: flex;
@@ -2330,6 +2591,143 @@
     .dfle{
         margin:10px;
     }
+    .cartitems1{
+        background-color:rgb(193, 193, 193);
+        color: black;
+        width: 350px;
+        height: 100px;
+       margin-left: -10px;
+        margin: 3px;
+       position: relative;
+       top: 10px;
+        left: -140px;
+    }
+    .cartte1{
+        display: flex;
+       
+        flex-direction: column;
+        height: 1000px;
+        width: 150px;
+        /* background-color: rgb(220, 209, 209);s */
+        
+    }
+    .itemenu{
+        position: relative;
+        left: -80px;
+        padding: 3px;
+    }
+    .itemscon1{
+        position: relative;
+        display: inline-block;
+        left: 100px;
+        top: -70px;
+    }
+    .price1{
+        font-size: 10px;
+    }
+    .imgcart3{
+        
+        width: 50px;
+        height: 50px;
+       float: right;
+       margin-top: 10px;
+    }
+    .remove1{
+        position: relative;
+        font-size: 9px;
+        margin-top: 5px;
+        padding: 0;
+        left: 4pxpx;
+        top: -7px;
+        height: 15px;
+        width: 40px;
+        color: green;
+        background-color: white;
+        font-weight: bold;
+    }
+    .quantity1{
+      display: flex;
+      
+      justify-content: space-around;
+      position: relative;
+      top:-70px;
+      left: 240px;
+      /* background-color: white; */
+      width: 100px;
+      padding: 0;
+      margin: 0;
+    }
+    .inc1,.dec1{
+        height: 15px;
+        width: 25px;
+        margin: 0;
+        padding: 0;
+        font-size: 5px;
+    }
+    .count1{
+      font-size: 12px;
+      margin: 0;
+      color: black;
+      padding:0px 3px 0px  3px;
+    }
+    .checkoutPage{
+        position: relative;
+        left: 230px;
+    }
+    .cartte11{
+        position: relative;
+        left: -5px;
+    }
+    .category1{
+        font-size: 12px;
+    }
+    .categ1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .check{
+        
+        background-color: rgb(27, 27, 213);
+        color: white;
+        position: relative;
+        left: -140px;
+        font-size: 10px;
+        height: 20px;
+        width: 350px;
+        font-weight: bold;
+        top: 10px;
+    }
+    .count12{
+        font-size: 8px;
+        position: relative;
+        left: -18px;
+    }
+    .total{
+        height: 30px;
+        font-size: 13px;
+        font-weight: bold;
+       margin: 0;
+       padding: 0;
+       position: relative;
+       width: 150px;
+       left: -10px;
+       top: 30px;
+     }
+     .proceed{
+        height: 20px;
+        font-size: 13px;
+        position: relative;
+        left: -100px;
+        top: 40px;
+     }
+     .notfound{
+        position: relative;
+        left: 10px;
+        margin-top: 0;
+        top: -80px;
+        font-weight: bold;
+        font-size: 15px;
+     }
 
 }
 @media  screen and (min-width:769px) and (max-width:1025px){
@@ -2398,26 +2796,31 @@
         left: 30px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 55px;
+        width: 60px;
         margin: 0;
+        font-size: 15px;
         padding: 0;
-        font-size: 8px;
         text-align: left;
-        height: 15px;
-        top: 2px;
+        height: 20px;
+        top: -3px;
         color: black;
         border: 1px solid black;
+    }
+    .cart-icon{
+        height: 18px;
+        width: 20px;
+        padding: 2px;
     }
     .login{
         font-weight: bold;
         background-color: rgb(207, 167, 22);
         position: relative;
-       top: -2px;
+       top: -4px;
        padding: 1px;
-       left: 45px;
-       width: 40px;
-       height: 15px;
-       font-size: 8px;
+       left: 50px;
+       width: 45px;
+       height: 25px;
+       font-size: 10px;
        padding: 0;
        font-weight: bold;
     }
@@ -2627,6 +3030,8 @@
         flex-direction: column;
         position: relative;
         align-items: center;
+        position: relative;
+        left: -250px;
     }
     .ch1{
         margin: 0;
@@ -2637,13 +3042,14 @@
     }
     .inp{
         position: relative;
-        left: 400px;
-        top: -30px;
+        left: 500px;
+        top: -90px;
         height: 10px;
         padding: 3px;
+        font-size: 10px;
      }
      .input{
-         width: 100px;
+         width: 180px;
          height: 20px;
          margin: 0;
          font-size: 7px;
@@ -2670,7 +3076,7 @@
         left: 140px;
     }
     .add{
-        position: absolute;
+        position: relative;
     }
     .cardsflex{
         display: flex;
@@ -2813,6 +3219,143 @@
     .dfle{
         margin:10px;
     }
+    .cartitems1{
+        background-color:rgb(193, 193, 193);
+        color: black;
+        width: 350px;
+        height: 100px;
+       margin-left: -10px;
+        margin: 3px;
+       position: relative;
+       top: 10px;
+        left: -140px;
+    }
+    .cartte1{
+        display: flex;
+       
+        flex-direction: column;
+        height: 1000px;
+        width: 150px;
+        /* background-color: rgb(220, 209, 209);s */
+        
+    }
+    .itemenu{
+        position: relative;
+        left: -80px;
+        padding: 3px;
+    }
+    .itemscon1{
+        position: relative;
+        display: inline-block;
+        left: 100px;
+        top: -70px;
+    }
+    .price1{
+        font-size: 10px;
+    }
+    .imgcart3{
+        
+        width: 50px;
+        height: 50px;
+       float: right;
+       margin-top: 10px;
+    }
+    .remove1{
+        position: relative;
+        font-size: 9px;
+        margin-top: 5px;
+        padding: 0;
+        left: 4pxpx;
+        top: -7px;
+        height: 15px;
+        width: 40px;
+        color: green;
+        background-color: white;
+        font-weight: bold;
+    }
+    .quantity1{
+      display: flex;
+      
+      justify-content: space-around;
+      position: relative;
+      top:-70px;
+      left: 240px;
+      /* background-color: white; */
+      width: 100px;
+      padding: 0;
+      margin: 0;
+    }
+    .inc1,.dec1{
+        height: 15px;
+        width: 25px;
+        margin: 0;
+        padding: 0;
+        font-size: 5px;
+    }
+    .count1{
+      font-size: 12px;
+      margin: 0;
+      color: black;
+      padding:0px 3px 0px  3px;
+    }
+    .checkoutPage{
+        position: relative;
+        left: 230px;
+    }
+    .cartte11{
+        position: relative;
+        left: -5px;
+    }
+    .category1{
+        font-size: 12px;
+    }
+    .categ1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .check{
+        
+        background-color: rgb(27, 27, 213);
+        color: white;
+        position: relative;
+        left: -140px;
+        font-size: 10px;
+        height: 20px;
+        width: 350px;
+        font-weight: bold;
+        top: 10px;
+    }
+    .count12{
+        font-size: 8px;
+        position: relative;
+        left: -18px;
+    }
+    .total{
+        height: 30px;
+        font-size: 13px;
+        font-weight: bold;
+       margin: 0;
+       padding: 0;
+       position: relative;
+       width: 150px;
+       left: -10px;
+       top: 30px;
+     }
+     .proceed{
+        height: 20px;
+        font-size: 13px;
+        position: relative;
+        left: -100px;
+        top: 40px;
+     }
+     .notfound{
+        position: relative;
+        left: 60px;
+        margin-top: 0;
+        top: -80px;
+        font-weight: bold;
+        font-size: 15px;
+     }
 
 
 }
@@ -2832,7 +3375,7 @@
         width: 20px;
         font-size: 18px;
         position: relative;
-        left: 70px;
+        left: 90px;
         top: -35px;
         display: inline;
         font-weight: bold;
@@ -2874,15 +3417,20 @@
         left: 20px;
         font-weight: bold;
         background-color: rgb(207, 167, 22);
-        width: 75px;
+        width: 55px;
         margin: 0;
-        padding: 0px;
-        font-size: 12px;
+        font-size: 18px;
+        padding: 0;
         text-align: left;
-        height: 20px;
-        top: -18px;
+        height: 25px;
+        top: -20px;
         color: black;
         border: 1px solid black;
+    }
+    .cart-icon{
+        height: 20px;
+        width: 30px;
+        padding: 2px;
     }
     .login{
         font-weight: bold;
@@ -2890,9 +3438,9 @@
         position: relative;
        top: -20px;
        left: 32px;
-       width: 40px;
-       height: 22px;
-       font-size: 12px;
+       width: 50px;
+       height: 28px;
+       font-size: 14px;
        padding: 0;
     }
     .mainslide{
@@ -3103,6 +3651,9 @@
         flex-direction: column;
         position: relative;
         align-items: center;
+        position: relative;
+        left: -350px;
+
     }
     .ch1{
         margin: 0;
@@ -3114,21 +3665,21 @@
     .inp{
         position: relative;
         left: 600px;
-        top: -30px;
+        top: -90px;
         height: 10px;
         padding: 3px;
      }
      .input{
-         width: 100px;
-         height: 20px;
+         width: 180px;
+         height: 40px;
          margin: 0;
-         font-size: 7px;
+         font-size: 13px;
      }
      .inputbut{
-         width: 50px;
-         height: 20px;
+         width: 60px;
+         height: 40px;
          display: inline;
-         font-size: 7px;
+         font-size: 10px;
      }
     .cards1{
         height: 200px;
@@ -3145,7 +3696,7 @@
         left: 140px;
     }
     .add{
-        position: absolute;
+        position: relative;
     }
     .cardsflex{
         display: flex;
@@ -3263,6 +3814,14 @@
     .dfle{
         margin:10px;
     }
+    .notfound{
+        position: relative;
+        left: 50px;
+        margin-top: 10px;
+        top: -80px;
+        font-weight: bold;
+        font-size: 20px;
+     }
 
 
 

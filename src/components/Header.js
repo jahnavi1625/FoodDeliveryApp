@@ -32,9 +32,8 @@ const Header = () => {
             <li>
               <Link to="/cart" className="link">
                 <p className="cart ">
-                  {/* {" "}
-                  <FaShoppingCart className="cart-icon" />  */}
-                  CART-{cartItems.length}
+                  
+                  <FaShoppingCart className="cart-icon" />- {cartItems.length}
                 </p>
               </Link>
             </li>

@@ -32,6 +32,7 @@ const Cart = () => {
         {cartItems.length === 0 && (
           <h1 className="w-96 "> Cart is empty. Add Items to the cart!</h1>
         )}
+        
         <RestaurantMenuItems items={cartItems} />
       </div>
       <div className="foot">
