@@ -16,7 +16,7 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("http://localhost:3002/About");
+    const data = await fetch("https://json-data-uw5r.onrender.com/About");
     console.log(data);
     const newData = await data.json();
     console.log(newData);
@@ -25,7 +25,7 @@ const Body = () => {
   };
 
   const fetchData2 = async () => {
-    const data = await fetch("http://localhost:3002/About2");
+    const data = await fetch("https://json-data-uw5r.onrender.com/About2");
     console.log(data);
     const newData = await data.json();
     console.log(newData);
@@ -34,7 +34,7 @@ const Body = () => {
   };
 
   const fetchData3 = async () => {
-    const data = await fetch("http://localhost:3002/About3");
+    const data = await fetch("https://json-data-uw5r.onrender.com/About");
     console.log(data);
     const newData = await data.json();
     console.log(newData);

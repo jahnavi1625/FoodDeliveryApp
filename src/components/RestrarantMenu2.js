@@ -25,13 +25,13 @@ const RestaurantMenu2 = () => {
   });
 
   const fetchData = async () => {
-    const data = await fetch("http://localhost:3002/data2");
+    const data = await fetch("https://json-data-uw5r.onrender.com/data2");
     const json = await data.json();
     setResInfo(json);
   };
 
   const fetchMain = async () => {
-    const data = await fetch("http://localhost:3002/About2");
+    const data = await fetch("https://json-data-uw5r.onrender.com/About2");
     const json = await data.json();
     setShowItem(json);
   };
