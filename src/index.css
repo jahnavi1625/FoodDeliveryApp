@@ -296,19 +296,19 @@
 .footer{
     
    padding: 5px;
-    height: 400px;
+    height: 250px;
+    position: fixed;
+    top: 500px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: black;
     color: white;
-    /* position: sticky; */
+   
 }
 .foot{
-    position: fixed;
-    top: 500px;
-    width: 100%;
+   
 }
 .google{
     height: 50px;
@@ -993,26 +993,23 @@
         text-align: center;
         font-style: italic;
     }
+    .flexCheck{
+        height: 1600px;
+    }
     .footer{
-        position: fixed;
-       /* padding: 5px; */
-       left: 0px;
-        height: 100px;
-        width: 320px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-color: black;
-        color: white;
-        padding: 0;
-        margin: 0;
-        /* top: 300px; */
-    }
-    .foot{
-        position: fixed;
-        top: 630px;
-        width: 100%;
-    }
+    
+        padding: 5px;
+         height: 150px;
+         width: 375px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         background-color: black;
+         color: white;
+         position: fixed;
+         top: 650px;
+     }
+     
     .google{
         height: 20px;
         width: 30px;
@@ -1711,19 +1708,22 @@
         text-align: center;
         font-style: italic;
     }
-    .footer{
-        position: relative;
-       /* padding: 10px; */
-       top: 200px;
-        height: 150px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-color: black;
-        color: white;
-        
+    .flexCheck{
+        height: 1800px;
     }
+    .footer{
+    
+        padding: 5px;
+         height: 180px;
+         width: 425px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         background-color: black;
+         color: white;
+         position: fixed;
+         top: 700px;
+     }
     .google{
         height: 25px;
         width: 40px;
@@ -2386,20 +2386,24 @@
         text-align: center;
         font-style: italic;
     }
-    .footer{
-        position: relative;
-       padding: 5px;
-       top: 230px;
-        height: 400px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        /* margin-top: 8px;s */
+    .flexCheck{
+        height: 100px;
     }
+    .footer{
+    
+        padding: 5px;
+         height: 190px;
+         position: fixed;
+         top: 700px;
+         width: 768px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         background-color: black;
+         color: white;
+        
+     }
+   
     .google{
         height: 30px;
         width: 60px;
@@ -2549,7 +2553,7 @@
         height: 300px;
         width: 500px;
         position: relative;
-        left: 50px;
+        /* left: 50px; */
     }
     .cartCon{
         font-size: 15px;
@@ -3010,12 +3014,16 @@
         font-style: italic;
         margin-top: 20px;
     }
+    .flexCheck{
+        height: 1500px;
+    }
     .footer{
-        position: relative;
+       
        padding: 5px;
-        height: 400px;
-        top: 500px;
-        width: 100%;
+        height: 300px;
+        position: fixed;
+        top: 800px;
+        width: 1024px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -3632,12 +3640,16 @@
         font-style: italic;
         margin-top: 20px;
     }
+    .flexCheck{
+        height: 1900px;
+    }
     .footer{
-        position: relative;
+        
        padding: 5px;
         height: 400px;
-        top: 550px;
-        width: 100%;
+        position: fixed;
+        top: 1300px;
+        width: 1440px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;

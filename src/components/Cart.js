@@ -16,6 +16,7 @@ const Cart = () => {
   };
 
   return (
+    <>
     <div className="cartdetails text-center  flex flex-col m-4 p-4 ">
       <div className="cartConmain" >
       <h1 className="cartCon text-2xl font-bold">Cart</h1>
@@ -35,11 +36,13 @@ const Cart = () => {
         
         <RestaurantMenuItems items={cartItems} />
       </div>
-      <div className="foot">
-        <Footer/>
-      </div>
+      
       
       </div>
+     
+      <Footer/>
+    
+    </>
     
   );
 };
