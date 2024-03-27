@@ -1007,7 +1007,7 @@
          background-color: black;
          color: white;
          position: fixed;
-         top: 650px;
+         /* top: 300px; */
      }
      
     .google{
@@ -1722,7 +1722,7 @@
          background-color: black;
          color: white;
          position: fixed;
-         top: 700px;
+         /* top: 700px; */
      }
     .google{
         height: 25px;
@@ -2394,7 +2394,7 @@
         padding: 5px;
          height: 190px;
          position: fixed;
-         top: 700px;
+         /* top: 700px; */
          width: 768px;
          display: flex;
          flex-direction: row;
@@ -3022,7 +3022,7 @@
        padding: 5px;
         height: 300px;
         position: fixed;
-        top: 800px;
+        /* top: 800px; */
         width: 1024px;
         display: flex;
         flex-direction: row;
@@ -3648,7 +3648,7 @@
        padding: 5px;
         height: 400px;
         position: fixed;
-        top: 1300px;
+        /* top: 1300px; */
         width: 1440px;
         display: flex;
         flex-direction: row;
