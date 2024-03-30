@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
   name: "cart",
@@ -17,7 +17,9 @@ const cartSlice = createSlice({
       localStorage.setItem("cart", JSON.stringify(state.items));
     },
     removeItem: (state, action) => {
-      state.items = state.items.filter((item) => item.id !== action.payload.id);
+      const itemId = action.payload;
+       state.items=state.items.filter((item) => item.id!== itemId);
+      // state.items = state.items.filter((item) => item.id !== action.payload.id);
       localStorage.setItem("cart", JSON.stringify(state.items));
     },
 
@@ -78,7 +80,6 @@ export const {
   counter,
   login,
   logout,
-  isAuthenticated
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

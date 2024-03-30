@@ -11,8 +11,8 @@ const RestaurantMenuItems = ({ items }) => {
   console.log(counter);
   const dispatch = useDispatch();
 
-  const removeItems = (item) => {
-    dispatch(removeItem(item));
+  const removeItems = (itemId) => {
+    dispatch(removeItem(itemId));
   };
   const incrementItem = (itemId) => {
     dispatch(increment(itemId));
@@ -51,7 +51,7 @@ const RestaurantMenuItems = ({ items }) => {
               <button className="dec1" onClick={() => decrementItem(item.id)}>
                 -
               </button>
-              <button className=" remove1" onClick={() => removeItems(item)}>
+              <button className=" remove1" onClick={() => removeItems(item.id)}>
               Remove
             </button>
             </div>
