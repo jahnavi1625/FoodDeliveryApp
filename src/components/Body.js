@@ -34,7 +34,7 @@ const Body = () => {
   };
 
   const fetchData3 = async () => {
-    const data = await fetch("https://json-data-uw5r.onrender.com/About");
+    const data = await fetch("https://json-data-uw5r.onrender.com/About3");
     console.log(data);
     const newData = await data.json();
     console.log(newData);
