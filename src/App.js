@@ -9,7 +9,7 @@ import RestaurantMenu2 from "./components/RestrarantMenu2";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RestaurantMenu3 from "./components/RestaurantMenu3";
 import AboutUs from "./components/AboutUs";
-import Slider2 from "./components/Slider2";
+import Slider2 from "./components/Home";
 import Payment from "./components/Payment";
 export const UserContext = createContext(null);
 
@@ -24,8 +24,8 @@ const App = () => {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<Slider2 slides={Images} />} />
-            <Route path="/" element={<Home />} />
+            
+            <Route path="/" element={<Home slides={Images} />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/login" element={<Login />} />
             <Route path="/restaurant/:id" element={<RestaurantMenu />} />
