@@ -78,6 +78,7 @@ export const {
   counter,
   login,
   logout,
+  isAuthenticated
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

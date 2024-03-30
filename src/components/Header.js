@@ -9,6 +9,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const location = GetCurrentAddress();
+  const isAuthenticated=useSelector(store=>store.cart.isAuthenticated)
   return (
     <div className="head   ">
       <div className="head2   ">
@@ -39,7 +40,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/login" className="link  ">
-                <button className="login ">LOGIN</button>
+                <button className="login ">{isAuthenticated?"LOGOUT":"LOGIN"}</button>
               </Link>
             </li>
           </ul>

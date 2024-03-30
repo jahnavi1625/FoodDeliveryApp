@@ -36,8 +36,6 @@ const Cart = () => {
         
         <RestaurantMenuItems items={cartItems} />
       </div>
-      
-      
       </div>
      
       <Footer/>

@@ -43,7 +43,6 @@ const Body = () => {
   };
 
   const params = useParams();
-  // console.log(params);
   const { id } = params;
   const handleClick = () => {
     navigate(`/restaurant`);

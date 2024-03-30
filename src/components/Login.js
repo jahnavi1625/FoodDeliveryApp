@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, {  useContext, useState } from "react";
 import { UserContext } from "../App";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
   const dispatch = useDispatch();
-  // const history = useHistory();
+
 
   const navigate = useNavigate();
   const loc = useLocation();

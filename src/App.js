@@ -1,8 +1,5 @@
 import React, { createContext, useState } from "react";
-// import "./App.css";
-// import "./index.css";
 import { Images } from "./assets/Images";
-
 import Cart from "./components/Cart";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -13,31 +10,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RestaurantMenu3 from "./components/RestaurantMenu3";
 import AboutUs from "./components/AboutUs";
 import Slider2 from "./components/Slider2";
-import Footer from "./components/Footer";
-import RestaurantMenuItems from "./components/RestaurantMenuItems";
 import Payment from "./components/Payment";
 export const UserContext = createContext(null);
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const userContextValue = { isLoggedIn, setIsLoggedIn };
-  // const [userInfo, setUserInfo] = useState();
-  // useEffect(() => {
-  //   const data = {
-  //     name: "jahnavi",
-  //   };
-  //   setUserInfo(data.name);
-  // }, []);
+
   return (
     <>
-      {/* <Provider store={appStore}> */}
-      {/* <UserContext.Provider value={{ loggedInUser: userInfo, setUserInfo }}> */}
-      {/* <Header/>
-        <Slider slides={Images} />
-        <Body /> */}
-      {/* </UserContext.Provider> */}
-      {/* <Cart />
-      </Provider> */}
+
       <UserContext.Provider value={userContextValue}>
         <BrowserRouter>
           <Header />
@@ -52,7 +34,6 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/payment" element={<Payment />} />
           </Routes>
-           
         </BrowserRouter>
       </UserContext.Provider>
     </>

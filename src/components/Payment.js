@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "../utils/cartSlice";
-import { removeItem } from "../utils/cartSlice";
+import React from "react";
+import { useSelector } from "react-redux"
 import { ToastContainer, toast } from "react-toastify";
 
 const Payment = ({ checkitems }) => {
@@ -16,17 +14,7 @@ const Payment = ({ checkitems }) => {
   const counter = useSelector((state) => state.cart.counter);
   
   console.log(counter);
-  const dispatch = useDispatch();
 
-  const removeItems = (item) => {
-    dispatch(removeItem(item));
-  };
-  const incrementItem = (itemId) => {
-    dispatch(increment(itemId));
-  };
-  const decrementItem = (itemId) => {
-    dispatch(decrement(itemId));
-  };
   const notify = () => {
     toast(`payment of ${totoalPrice()} succesfull`);
   };

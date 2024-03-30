@@ -15,7 +15,7 @@ const RestaurantMenu2 = () => {
   const [searchText, setSearchText] = useState("");
   const [click, setClick] = useState(false);
   const navigate = useNavigate();
-  const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
+  const { isLoggedIn } = useContext(UserContext);
   const param = useParams();
   const { id } = param;
 
