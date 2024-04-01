@@ -18,7 +18,7 @@ const cartSlice = createSlice({
     },
     removeItem: (state, action) => {
       const itemId = action.payload;
-       state.items=state.items.filter((item) => item.id!== itemId);
+      state.items = state.items.filter((item) => item.id !== itemId);
       // state.items = state.items.filter((item) => item.id !== action.payload.id);
       localStorage.setItem("cart", JSON.stringify(state.items));
     },
@@ -55,18 +55,6 @@ const cartSlice = createSlice({
         localStorage.setItem("cart", JSON.stringify(state.items));
       }
     },
-    login: (state, action) => {
-      state.isAuthenticated = true;
-      state.user = action.payload;
-      sessionStorage.setItem("isAuthenticated", "true");
-      sessionStorage.setItem("user", JSON.stringify(action.payload));
-    },
-    logout: (state, action) => {
-      state.isAuthenticated = false;
-      state.user = null;
-      sessionStorage.removeItem("isAuthenticated", "true");
-      sessionStorage.removeItem("user", JSON.stringify(action.payload));
-    },
   },
 });
 
@@ -78,8 +66,6 @@ export const {
   increment,
   decrement,
   counter,
-  login,
-  logout,
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

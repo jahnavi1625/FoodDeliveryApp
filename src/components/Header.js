@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import GetCurrentAddress from "../utils/GetCurrentAddress.js";
 import logos from "../assets/logos.png";
 import { FaShoppingCart } from "react-icons/fa";
+import { UserContext } from "../App.js";
 
 
 const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const location = GetCurrentAddress();
-  const isAuthenticated=useSelector(store=>store.cart.isAuthenticated)
+  const { isLoggedIn } = useContext(UserContext);
   return (
     <div className="head   ">
       <div className="head2   ">
@@ -40,7 +41,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/login" className="link  ">
-                <button className="login ">{isAuthenticated?"LOGOUT":"LOGIN"}</button>
+                <button className="login ">{isLoggedIn?"LOGOUT":"LOGIN"}</button>
               </Link>
             </li>
           </ul>

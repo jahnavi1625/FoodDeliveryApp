@@ -8,7 +8,6 @@ const Login = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
-  const dispatch = useDispatch();
 
   const navigate = useNavigate();
   const loc = useLocation();
@@ -20,13 +19,12 @@ const Login = () => {
     if (name === "default@gmail.com" && password === "foodapp") {
       setIsLoggedIn(true);
       console.log(isLoggedIn);
-      dispatch(login());
       navigate(`/`);
     } else {
+      setIsLoggedIn(false);
       alert(
         "please enter valid details take default values which are provided"
       );
-      dispatch(logout());
     }
   };
 
