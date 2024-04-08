@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     height: 100px;
-    width:100%;
+    width:100vw;
     background-color: rgb(31, 163, 161);
     /* position: fixed; */
 }
@@ -34,11 +34,16 @@
     width: 20px;
     font-size: 20px;
     position: relative;
-    left: 150px;
+    left: 230px;
     top: -60px;
     display: inline;
     font-weight: bold;
 }
+.appname{
+    font-size: 20px;
+     position: relative;
+     top: 17px;
+ }
 .list{
     /* width: 10px; */
     display: flex;
@@ -104,7 +109,7 @@
 }
 .imageslide{
     height: 600px;
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 .btn1{
@@ -236,7 +241,7 @@
     padding: 3px;
 }
 .body{
-    width: 100%;
+    width: 100vw;
     height: 500px;
     position: relative;
     display: flex;
@@ -299,7 +304,7 @@
     height: 250px;
     position: relative;
     /* top: 500px; */
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -342,9 +347,6 @@
     font-size: 15px;
     color: white;
 }
-
-
-
 .img1{
     height: 100px;
     width: 100px;
@@ -721,7 +723,7 @@
         margin: 0;
         padding: 0;
         height: 40px;
-        width:100%;
+        width:100vw;
         background-color: rgb(31, 163, 161);
     }
     .loc{
@@ -729,11 +731,16 @@
         width: 10px;
         font-size: 4px;
         position: relative;
-        left: 40px;
+        left: 60px;
         top: -20px;
         display: inline;
         font-weight: bold;
     }
+    .appname{
+        font-size: 8px;
+         position: relative;
+         top: 7px;
+     }
     .head2{
          height: 40px;
     }
@@ -1445,11 +1452,16 @@
         width: 10px;
         font-size: 5px;
         position: relative;
-        left: 40px;
+        left: 60px;
         top: -25px;
         display: inline;
         font-weight: bold;
     }
+    .appname{
+        font-size: 8px;
+         position: relative;
+         top: 6px;
+     }
     .head2{
          height: 40px;
     }
@@ -2130,11 +2142,16 @@
         width: 20px;
         font-size: 10px;
         position: relative;
-        left: 30px;
-        top: -25px;
+        left: 100px;
+        top: -20px;
         display: inline;
         font-weight: bold;
     }
+    .appname{
+        font-size: 12px;
+         position: relative;
+         top: 15px;
+     }
     .list{
         /* width: 10px; */
         display: flex;
@@ -2753,11 +2770,16 @@
         width: 20px;
         font-size: 13px;
         position: relative;
-        left: 60px;
-        top: -30px;
+        left: 110px;
+        top: -35px;
         display: inline;
         font-weight: bold;
     }
+    .appname{
+        font-size: 14px;
+         position: relative;
+         top: 15px;
+     }
     .list{
         /* width: 10px; */
         display: flex;
@@ -3388,10 +3410,15 @@
         width: 20px;
         font-size: 18px;
         position: relative;
-        left: 90px;
-        top: -35px;
+        left: 140px;
+        top: -40px;
         display: inline;
         font-weight: bold;
+    }
+    .appname{
+       font-size: 14px;
+        position: relative;
+        top: 20px;
     }
     .list{
         /* width: 10px; */
@@ -3461,7 +3488,7 @@
     }
     .imageslide{
         height: 340px;
-        width: 1441px;
+        width: 100vw;
         position: relative;
     }
     .btn1{
@@ -3648,7 +3675,7 @@
        padding: 5px;
         height: 400px;
         position: fixed;
-        top: 1300px;
+        
         width: 1440px;
         display: flex;
         flex-direction: row;
@@ -3844,4 +3871,480 @@
 
 
 }
+@media  screen and (min-width:1441px) and (max-width:2560px){
+    
+    
+    
+    .head{
+        margin: 0;
+        padding: 0;
+        height: 80px;
+        width:100vw;
+        background-color: rgb(31, 163, 161);
+    }
+    .loc{
+        height: 5px;
+        width: 20px;
+        font-size: 18px;
+        position: relative;
+        left: 200px;
+        top: -40px;
+        display: inline;
+        font-weight: bold;
+    }
+    .appname{
+       font-size: 18px;
+        position: relative;
+        top: 20px;
+    }
+    .list{
+        /* width: 10px; */
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: flex-start;
+        position: relative;
+        top: -65px;
+        font-weight: bold;
+        left: 1200px;
+        font-size: 15px ;
+        list-style-type: none;
+        text-decoration: none;
+    }
+   .home,.about{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -20px;
+   }
+    .image{
+        margin-left: 6px;
+        margin-top: 0px;
+        width:60px;
+        height: 60px;
+        position: relative;
+        top: 10px;
+    }
+    .about{
+        position: relative;
+        left: 20px;
+    }
+    .cart{
+        position: relative;
+        left: 30px;
+        font-weight: bold;
+        background-color: rgb(207, 167, 22);
+        width: 55px;
+        margin: 0;
+        font-size: 18px;
+        padding: 0;
+        text-align: left;
+        height: 25px;
+        top: -20px;
+        color: black;
+        border: 1px solid black;
+    }
+    .cart-icon{
+        height: 20px;
+        width: 30px;
+        padding: 2px;
+    }
+    .login{
+        font-weight: bold;
+        background-color: rgb(207, 167, 22);
+        position: relative;
+       top: -20px;
+       left: 45px;
+       width: 70px;
+       height: 28px;
+       font-size: 14px;
+       padding: 0;
+    }
+    .mainslide{
+        width: 100vw;
+    }
+    .imageslide{
+        height: 480px;
+        width: 100vw;
+        position: relative;
+    }
+    .btn1{
+        height: 30px;
+        width: 40px;
+        position: absolute;
+        top:250px;
+        left: 80px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+    }
+    .btn2{
+        height: 30px;
+        width: 40px;
+        position: absolute;
+        top:250px;
+        left: 1300px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+    }
+    .card1{
+        height: 360px;
+        width: 260px;
+        position: relative;
+        left: 250px;
+        background-image: linear-gradient(blue,cyan);
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .card2{
+        height: 360px;
+        width: 260px;
+        position: relative;
+        left: 350px;
+        background-image: linear-gradient(blue,cyan);
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .card3{
+        height: 360px;
+        width: 260px;
+        position: relative;
+        left: 450px;
+        background-image: linear-gradient(blue,cyan);
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .c2{
+        height: 200px;
+        width: 90px;
+    
+    }
+    .c3{
+        height: 200px;
+        width: 90px;
+    }
+    .c2img{
+        height: 160px;
+        width: 250px;
+        /* padding: 0px; */
+        position: relative;
+        left: 2px;
+    }
+    .c1img{
+        height: 160px;
+        width: 250px;
+        /* padding: 0px; */
+        position: relative;
+        left: 2px;
+    }
+    .card1img{
+        height: 160px;
+        width: 250px;
+        /* padding: 0px; */
+        position: relative;
+        left: 2px;
+    }
+    .p{
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 0px;
+        /* width: 200px; */
+        margin: 0;
+        text-align: center;
+        
+    }
+    .link{
+        text-decoration: none;
+    }
+    .ps{
+          font-size: 17px;
+        margin: 0;
+        font-style: italic;
+        width: 100px;
+    }
+    .p1,.p2,.p3,.p4{
+        font-size: 14px;
+        position: relative;
+        margin: 0;
+        font-style: italic;
+        width: 100px;
+        text-align: center;
+    }
+    .div1{
+        position: relative;
+        left: 10px;
+        width: 240px;
+        top: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: black;
+        list-style-type:none;
+    }
+    .body{
+        width: 100vw;
+        height: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-image: linear-gradient(blue,cyan);
+    }
+    li{
+        list-style: none;
+    }
+    .body2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 3px;
+    }
+    .head1{
+        font-size:20px;
+        list-style-type: none;
+    }
+    .l1{
+        font-size: 15px;
+        list-style-type: none;
+        font-style: italic;
+    }
+    .ul1,.ul2{
+        width:120px;
+        font-style: italic;
+    }
+    
+    .ul1{
+        position: relative;
+        left: -50px;
+        list-style-type: none;
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .ul2{
+        position: relative;
+        left: -30px;
+        list-style-type: none;
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .ul3{
+        
+        position: relative;
+        left: -50px;
+        list-style-type: none;
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .flexCheck{
+        height: 1900px;
+    }
+    .footer{
+        
+       padding: 5px;
+        height: 400px;
+        position: relative;
+        
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: black;
+        color: white;
+       
+    }
+    .google{
+        height: 30px;
+        width: 60px;
+        position: relative;
+        left: -70px;
+        margin-top: 20px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        position: relative;
+        left: -350px;
 
+    }
+    .ch1{
+        margin: 0;
+        font-size: 23px;
+    }
+    .ch3,.ch4{
+          font-size: 15px;
+    }
+    .inp{
+        position: relative;
+        left: 600px;
+        top: -90px;
+        height: 10px;
+        padding: 3px;
+     }
+     .input{
+         width: 350px;
+         height: 40px;
+         margin: 0;
+         font-size: 13px;
+     }
+     .inputbut{
+         width: 60px;
+         height: 40px;
+         display: inline;
+         font-size: 10px;
+     }
+    .cards1{
+        height: 200px;
+        width: 260px;
+        background-color: rgb(44, 17, 49);
+        color: white;
+        /* padding: 2px; */
+    }
+    .img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -50px;
+        left: 140px;
+    }
+    .add{
+        position: relative;
+    }
+    .cardsflex{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        justify-content: space-evenly;
+    }
+    .loginw{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: rgb(38, 189, 179);
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+        position: relative;
+        left: 600px;
+        top:80px;
+        font-weight: bold;
+    }
+    .logins{
+      display: flex;
+      flex-direction: column;
+    }
+    .inp1,.inp2{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub{
+        width: 70px;
+        padding: 4px ;
+        position: relative;
+        top: 8px;
+    }
+    .cartdetails{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 20px;
+    }
+    .cartbutton{
+        background-color: black;
+        color: white;
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+        margin: 0;
+        /* padding: 0; */
+    }
+    .cartitems{
+        background-color:rgb(44, 17, 49);
+        color: white;
+        height: 150px;
+        width: 160px;
+        margin: 4px;
+        padding: 3px;
+        margin: 10px;
+    }
+    .cartte{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        height: 300px;
+        width: 700px;
+        position: relative;
+        left: 50px;
+    }
+    .cartCon{
+        font-size: 20px;
+        text-align: left;
+        position: relative;
+        left: 20px;
+    }
+    .imgcart2{
+        position: relative;
+        /* left: 30px; */
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    .remove{
+        position: absolute;
+        /* left: 20px; */
+        width: 40px;
+        height: 15px;
+        font-size: 7px;
+        padding: 0;
+        align-self:start ;
+    }
+    .quantity{
+      display: flex;
+      left:70px;
+      top: 20px;
+    }
+    .inc,.dec{
+        height: 20px;
+        width: 15px;
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+    }
+    .count{
+      font-size: 8px;
+      margin: 0;
+    }
+    .category,.price{
+        font-size: 8px;
+    }
+    .categ{
+        font-size: 10px;
+    }
+    .dfle{
+        margin:10px;
+    }
+    .notfound{
+        position: relative;
+        left: 50px;
+        margin-top: 10px;
+        top: -80px;
+        font-weight: bold;
+        font-size: 20px;
+     }
+
+
+
+}

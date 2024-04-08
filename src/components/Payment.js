@@ -6,7 +6,11 @@ const Payment = ({ checkitems }) => {
   const totoalPrice = () => {
     let sum = 0;
     checkitems.forEach((item) => {
-      sum += item.price * item.counter;
+      if(typeof item.counter=="number"){
+        sum += item.price * item.counter;
+      }else{
+        sum+=1*item.price;
+      } 
     });
     return sum;
   };
@@ -29,7 +33,7 @@ const Payment = ({ checkitems }) => {
             <h1 className="categ1 ">{item.itemName}</h1>
             <h3 className="category1">{item.category}</h3>
             <h4 className="price1 ">
-              Price : Rs.{item.price * item.counter}/-
+              Price : Rs.{ typeof item.counter=="number" ? item.price * item.counter : 1*item.price}/-
             </h4>
             <div className="itemscon1">
               

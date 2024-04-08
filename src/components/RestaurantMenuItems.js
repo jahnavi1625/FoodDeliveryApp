@@ -34,7 +34,7 @@ const RestaurantMenuItems = ({ items }) => {
           <div className="itemenu">
           <h1 className="categ1 ">{item.itemName}</h1>
           <h3 className="category1">{item.category}</h3>
-          <h4 className="price1 ">Price : Rs.{item.price*item.counter}/-</h4>
+          <h4 className="price1 ">Price : Rs.{ typeof item.counter=="number" ?item.price*item.counter : 1*item.price}/-</h4>
           <div className="itemscon1">
             
             <img
@@ -47,7 +47,7 @@ const RestaurantMenuItems = ({ items }) => {
               <button className="inc1" onClick={() => incrementItem(item.id)}>
                 +
               </button>
-              <h1 className="count1">{item.counter}</h1>
+              <h1 className="count1">{typeof item.counter!=="number" ? 1 : item.counter}</h1>
               <button className="dec1" onClick={() => decrementItem(item.id)}>
                 -
               </button>

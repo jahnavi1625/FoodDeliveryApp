@@ -16,6 +16,7 @@ const Header = () => {
       <div className="head2   ">
         <div>
           <img className=" image  " src={logos} alt="logo" />
+          <span className="appname"><b>Food App</b></span>
         </div>
         <div className="loc ">{location}</div>
         <div className="listmain">
