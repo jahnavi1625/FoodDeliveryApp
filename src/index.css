@@ -20,6 +20,7 @@
 #root{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .head{
     margin: 0;
@@ -2411,7 +2412,6 @@
         padding: 5px;
          height: 250px;
          position: fixed;
-         top: 900px;
          width: 768px;
          display: flex;
          flex-direction: row;
@@ -3041,11 +3041,10 @@
     }
     .footer{
        
-       padding: 5px;
+        padding: 5px;
         height: 300px;
         position: fixed;
-        top: 900px;
-        width: 1024px;
+        width: 1440px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -3176,7 +3175,6 @@
         position: relative;
         left: -80px;
     }
-    
     .cartitems{
         background-color:rgb(44, 17, 49);
         color: white;
@@ -3675,7 +3673,6 @@
        padding: 5px;
         height: 400px;
         position: fixed;
-        
         width: 1440px;
         display: flex;
         flex-direction: row;
@@ -4233,7 +4230,7 @@
         background-color: black;
         color: rgb(38, 189, 179);
         width: 350px;
-        height: 350px;
+        height: 450px;
         padding: 10px;
         position: relative;
         left: 600px;
