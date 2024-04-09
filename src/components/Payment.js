@@ -45,7 +45,7 @@ const Payment = ({ checkitems }) => {
             </div>
             <div className="quantity1">
               
-              <h1 className="count12">No of items : {item.counter}</h1>
+              <h1 className="count12">No of items : {typeof item.counter==="number" ? item.counter : 1 }</h1>
               
             </div>
           </div>

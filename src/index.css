@@ -3822,26 +3822,37 @@
         height: 50px;
         float: right;
     }
-    .remove{
-        position: absolute;
-        /* left: 20px; */
-        width: 40px;
-        height: 15px;
-        font-size: 7px;
+    .remove1{
+        position: relative;
+        font-size: 15px;
+        margin-top: 5px;
         padding: 0;
-        align-self:start ;
+        left: 4px;
+        top: -7px;
+        height: 30px;
+        width: 80px;
+        color: green;
+        background-color: white;
+        font-weight: bold;
     }
-    .quantity{
+    .quantity1{
       display: flex;
-      left:70px;
-      top: 20px;
+      
+      justify-content: space-around;
+      position: relative;
+      top:-75px;
+      left: 240px;
+      /* background-color: white; */
+      width: 140px;
+      padding: 0;
+      margin: 0;
     }
-    .inc,.dec{
-        height: 20px;
-        width: 15px;
-        font-size: 8px;
-        padding: 0;
+    .inc1,.dec1{
+        height: 30px;
+        width: 30px;
         margin: 0;
+        padding: 0;
+        font-size: 17px;
     }
     .count{
       font-size: 8px;
@@ -4299,29 +4310,40 @@
         height: 50px;
         float: right;
     }
-    .remove{
-        position: absolute;
-        /* left: 20px; */
-        width: 40px;
-        height: 15px;
-        font-size: 7px;
+    .remove1{
+        position: relative;
+        font-size: 15px;
+        margin-top: 5px;
         padding: 0;
-        align-self:start ;
+        left: 4pxpx;
+        top: -7px;
+        height: 30px;
+        width: 70px;
+        color: green;
+        background-color: white;
+        font-weight: bold;
     }
-    .quantity{
+    .quantity1{
       display: flex;
-      left:70px;
-      top: 20px;
+      
+      justify-content: space-around;
+      position: relative;
+      top:-70px;
+      left: 240px;
+      /* background-color: white; */
+      width: 200px;
+      padding: 0;
+      margin: 0;
     }
-    .inc,.dec{
-        height: 20px;
-        width: 15px;
-        font-size: 8px;
-        padding: 0;
+    .inc1,.dec1{
+        height: 25px;
+        width: 30px;
         margin: 0;
+        padding: 0;
+        font-size: 17px;
     }
     .count{
-      font-size: 8px;
+      font-size: 6px;
       margin: 0;
     }
     .category,.price{
